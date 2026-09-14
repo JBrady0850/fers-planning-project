@@ -1,0 +1,43 @@
+# Never commit personal retirement data.
+# If you cloned this repo to use the system, keep your workspace OUTSIDE it.
+# These rules are a safety net, not a substitute for that.
+
+01 Source Documents/
+02 Baseline/
+03 Monthly Reports/
+04 Analysis/
+05 Boldin/
+06 Open Items/
+07 Archive/
+workspace/
+my-workspace/
+
+# Document and data types that carry personal information
+*.csv
+*.xlsx
+*.xls
+*.xlsm
+*.ofx
+*.qfx
+*.qif
+
+# Everything except the PDF user guide
+*.pdf
+!docs/FERS-Planning-Project-User-Guide.pdf
+
+# Local notes
+Facts Register.md
+Open Items.md
+!templates/facts-register.md
+!templates/open-items.md
+
+# OS and editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+.obsidian/
+.vscode/
+.idea/
+*~
+*.bak
+*.tmp

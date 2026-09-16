@@ -2,7 +2,7 @@
   size: Letter;
   margin: 1.8cm 1.6cm 1.6cm;
   @bottom-left {
-    content: "FERS Planning Project, User Guide v1.1.0";
+    content: "FERS Planning Project, User Guide v1.1.1";
     font-family: "DejaVu Sans", sans-serif; font-size: 9.3px; color: #929da7;
     width: 50%; text-align: left;
     border-top: 0.6pt solid #e4eaee; padding-top: 8.7pt; vertical-align: top;

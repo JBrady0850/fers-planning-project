@@ -231,13 +231,15 @@ Then model the three interactions that actually drive the decision for a FERS re
 
 **Then compare against the alternative.** Price the term or permanent life insurance that would replace the survivor annuity, at the retiree's current age and health, and note that no insurance policy replicates the FEHB eligibility.
 
-**Output.** A three column comparison, the insurance consequence stated separately, the arithmetic for both paths, and an explicit instruction that spousal consent is required for anything less than the maximum and that the election is irreversible after final adjudication.
+**Output.** A three column comparison, the insurance consequence stated separately, the arithmetic for both paths, and an explicit instruction that spousal consent is required for anything less than the maximum, that the election may be changed in either direction for 30 days after the first regular monthly payment, and that afterwards it can only be increased, through the 18 month deposit window under 5 USC 8416(d) or an election within two years of a post retirement marriage.
 
 ### D9. FEGLI Reduction Election Analysis
 
 `04 Analysis/FEGLI Election YYYY-MM-DD.md`
 
-**Purpose.** Price the SF 2818 election, which is made once at retirement and is one way thereafter.
+**Purpose.** Price the SF 2818 election. It may be changed in either direction for 30 days after the first regular monthly annuity payment, and after that it moves one way only, downward, and can never be increased. Options B and C get one further election by the end of the month after the month the annuitant turns 65.
+
+**Reduction rates, which differ by election and are commonly modeled wrong.** The 75 percent reduction runs at 2 percent of the Basic Insurance Amount per month until 25 percent remains, roughly 37 months, and is premium free once reductions begin. The 50 percent reduction runs at **1 percent per month**, not 2, so it takes 50 months to floor at 50 percent, and the extra premium continues after 65. No reduction holds 100 percent for life at the largest premium. Reductions begin the first day of the second month after the later of age 65 or retirement.
 
 **Method.** Take the Basic Insurance Amount in effect at retirement. Model the three Basic elections:
 

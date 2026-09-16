@@ -115,7 +115,7 @@ Three conventions used throughout:
 
 # Part 2: A Plain Language FERS Primer
 
-This part explains, in order, the rules the system applies. Every rule here is cited in `docs/06-fers-rules- reference.md`. Verified September 2026. Dollar figures are 2026 program year values and change annually.
+This part explains, in order, the rules the system applies. Every rule here is cited in `docs/06-fers-rules-reference.md`. Verified September 2026. Dollar figures are 2026 program year values and change annually.
 
 Read it once before you run the interview. You do not need to memorize any of it. You do need to recognize the moment a number surprises you, because that is the moment the system is earning its keep.
 
@@ -155,7 +155,7 @@ Anyone born in 1970 or later has an MRA of 57. If you have been carrying 55 in y
 
 ## 2.3 The four ways to retire immediately
 
-“Immediate” means the annuity begins within thirty days of separation. There are four paths and they are not equivalent.
+“Immediate” means the annuity begins **no later than 31 days after separation**. For a voluntary retirement that means the first day of the month after you separate. There are four paths to a regular voluntary immediate retirement and they are not equivalent. Special provision employees, early outs and discontinued service retirements have their own thresholds, and Section 2.16 covers those.
 
 | Path | Age | Service | Annuity reduced? | FERS Supplement? |
 |---|---|---|---|---|
@@ -242,7 +242,11 @@ Three properties of that definition matter and are routinely missed.
 
 ## 2.6 Unused sick leave
 
-Since **January 1, 2014**, FERS retirees receive **one hundred percent credit** for unused sick leave. Conversion is 2,087 hours to a year, 8 hours to a day, and residual days beyond whole months are dropped.
+Since **January 1, 2014**, FERS retirees receive **one hundred percent credit** for unused sick leave.
+
+**The conversion is not eight hours to a day, and getting this wrong inflates your own estimate by about thirty eight percent.** OPM converts the balance on its 2,087 hour chart, and the year it converts into is the 360 day retirement year, twelve months of thirty days each. So 2,087 hours is one year, about **174 hours is one month**, and about **5.8 hours is one day**. An eight hour day belongs to the leave charging system, which is a different thing entirely.
+
+Two rules govern the lookup. Round **up** to the next figure on the chart, never down. Then add the months and days to your actual service and **only after that** drop any leftover days of the combined total. The order matters: sick leave days can complete a partial month of real service, and truncating the sick leave on its own throws that month away.
 
 What it does: adds to your creditable service **for the annuity computation**.
 
@@ -250,9 +254,10 @@ What it does not do, and all three of these are important:
 
 - It does **not** count toward retirement eligibility. A person at 29 years and 6 months with 1,000 hours of sick leave is not eligible for MRA+30.
 - It does **not** raise your high-3.
-- It does **not** help you reach the 20 years needed for the 1.1 percent multiplier.
 
-A worked example. 1,044 hours of sick leave is almost exactly six months of service.
+**One thing it does do, and most published guidance says otherwise.** Sick leave credit **can** carry you to the 20 years of service that the 1.1 percent multiplier requires. OPM settled this in Benefits Administration Letter 18-103, dated 12 September 2018: a retiree at least 62 whose actual service is under 20 years, but which reaches 20 with the addition of unused sick leave credit, has the annuity computed at 1.1 percent. The reasoning is that the 1.1 percent factor is a computation rule and not an eligibility rule. If you will be near 20 years at 62, this is worth roughly ten percent of your annuity for life, and it is worth raising with your benefits office in writing.
+
+A worked example. 1,044 hours of sick leave is exactly six months on the chart.
 
 ```
 1,044 / 2,087 = 0.50 years
@@ -333,6 +338,8 @@ service / 40)
 
 Use your own **zero future earnings** estimate for the first term, not the figure on your Social Security statement. See Section 2.12.
 
+**Then treat the result as a ceiling rather than an estimate.** OPM does not use your Social Security figure at all. It builds a separate earnings record containing only your FERS basic pay, enters **zero for every year you were not under FERS**, works out what that record would pay at 62, and applies the fraction to that. If you earned substantially outside the federal government before you joined it, your real supplement will be lower than this formula suggests, sometimes much lower. Size the bridge with the formula, then ask your benefits office for the agency computation before you rely on it.
+
 **Military service does not count in the numerator, even if you paid the deposit.** The numerator is civilian FERS service only, capped at 40 years.
 
 A worked example. Age 62 benefit of $2,100 with 28 years of FERS civilian service:
@@ -350,7 +357,8 @@ $2,100 x (28 / 40) = $2,100 x 0.70 = $1,470 per month
 **It is subject to an earnings test.** If you work after retiring, the supplement is reduced by **one dollar for every two dollars** you earn above the annual exempt amount.
 
 - The 2026 annual exempt amount is **$24,480**, which is $2,040 a month.
-- The reduction is applied in the year **after** the earnings were made, in practice starting with the July payment.
+- The reduction is applied in the year after the earnings were made, in practice starting with the July payment. So 2026 earnings are tested against the 2026 exempt amount and reduce the supplement from July 2027 through June 2028.
+- The reduction can never exceed the supplement itself. The supplement can be reduced to zero, but it cannot go negative or reach into your annuity.
 - **Counted:** wages and net self employment income, including bonuses and overtime, including work not covered by Social Security.
 - **Not counted:** your FERS annuity, TSP withdrawals, Social Security, interest, dividends, capital gains, most rental income, inheritances, insurance proceeds.
 - Special provision retirees are exempt until they reach their MRA, then the test applies.
@@ -359,7 +367,7 @@ A post retirement job paying $45,000 erases roughly $10,260 a year of supplement
 
 ### Legislative risk
 
-Elimination of the supplement for people not already entitled before January 2028 was proposed in 2025 reconciliation legislation and passed the House. It was **removed before enactment** when the Senate parliamentarian ruled the federal workforce provisions out of order under the Byrd rule. A proposed change from high-3 to high-5 was dropped in the same process.
+Elimination of the supplement for people not already entitled before January 2028 was proposed in 2025 reconciliation legislation and passed the House. It was **absent from the Senate text** released in June 2025, and the parliamentarian’s Byrd rule rulings struck most of the other federal workforce provisions in the same period. The proposed change from high-3 to high-5 was dropped earlier still, before the House vote in May 2025.
 
 **Nothing is enacted as of September 2026.** But these were defeated on procedural grounds, not on the merits, and they can return in standalone legislation. If your separation is five or more years out, model current law and run one sensitivity case with the supplement set to zero, so you know the size of the exposure.
 
@@ -369,9 +377,11 @@ Be careful what you read about this. At least one widely followed federal benefi
 
 ### The age 62 rule
 
-A FERS retiree who is **under 62** receives **no cost of living adjustment** on the annuity. Not a reduced one. None. The first adjustment arrives with the one following your 62nd birthday.
+A FERS retiree who is **under 62** receives **no cost of living adjustment** on the annuity. Not a reduced one. None. The first adjustment you receive is the first one that **takes effect** on or after your 62nd birthday. Adjustments take effect on December 1, so the real test is whether you are 62 on that December 1. Turn 62 in the middle of December and you miss that year’s adjustment entirely and wait another twelve months for the next one.
 
-The exceptions are special provision retirees, FERS disability annuitants, military reserve technicians separated due to disability, and survivor annuitants.
+The exceptions are retirees in the special provision categories, meaning law enforcement officers, Capitol Police and Supreme Court Police, firefighters, nuclear materials couriers, Customs and Border Protection officers and air traffic controllers, plus FERS disability annuitants, military reserve technicians separated **due to disability**, and survivor annuitants. A military reserve technician who retires for loss of military membership rather than disability is not excepted.
+
+One more thing to expect in your first year. The first adjustment after you retire is prorated, at one twelfth of the rate for each month you were on the annuity roll.
 
 If you retire at 57, that is five full years of a nominally flat annuity while your expenses inflate. At three percent inflation, five flat years costs about fourteen percent of purchasing power before the first adjustment ever arrives. This is the single most important thing to get right in any projection, and it is Defect Class 1 in the Boldin guide for that reason.
 
@@ -404,7 +414,7 @@ To carry your health insurance into retirement you must satisfy **both** of thes
 
 What counts toward the five years: enrollment in your own name, coverage as a family member under someone else’s FEHB enrollment, and TRICARE or CHAMPVA coverage provided you are enrolled in FEHB on the date you retire. **Medicare does not count.**
 
-Failing it forfeits FEHB in retirement permanently. You get a 31 day extension, the right to convert to an individual policy, and possibly Temporary Continuation of Coverage for up to eighteen months at 102 percent of the full premium.
+Failing it forfeits FEHB in retirement, and outside the narrow waiver circumstances described below that forfeiture is permanent. You get a 31 day extension, the right to convert to an individual policy, and possibly Temporary Continuation of Coverage for up to eighteen months at 102 percent of the full premium.
 
 OPM can waive the requirement, but in practice the waiver is pre-approved only in narrow circumstances tied to a buyout, an early out authority, or an involuntary separation.
 
@@ -438,7 +448,7 @@ Dental and vision coverage continues into retirement with no minimum enrollment 
 
 ### Premiums change character in retirement
 
-The government share is **identical** for annuitants and employees. The formula pays the lesser of 72 percent of the program wide weighted average premium or 75 percent of your plan’s total premium, either way.
+The government share is set by the **same formula** for annuitants and employees, paying the lesser of 72 percent of the program wide weighted average premium or 75 percent of your plan’s total premium either way. One caveat: if your agency contributed more than the statutory share, that extra contribution does not follow you into retirement.
 
 What changes is that the premium conversion plan covers **current employees only**. As an employee your FEHB premium comes out pre-tax. As an annuitant it comes out **post-tax**.
 
@@ -460,7 +470,7 @@ This is a genuine decision with costs on both sides.
 
 **If you decline Part B.** You save the premium. You give up: a **permanent late enrollment penalty of ten percent of the standard premium for each full twelve month period of delay** if you take it later, eligibility for the FEHB Medicare Advantage options and their premium reimbursements, plan features that waive cost sharing when Medicare is primary, and coverage for out of network physicians Part B would have covered.
 
-A trap inside the trap: **retiree coverage does not create a Medicare special enrollment period.** The eight month special enrollment period requires group coverage based on **current employment**. A retiree who skips Part B at 65 generally has to use the general enrollment period later, and eats the penalty.
+A trap inside the trap: **retiree coverage does not create a Medicare special enrollment period.** If you are still working at 65 and covered by FEHB as an employee, you do get the eight month period when that employment ends. The trap catches the person who is already retired at 65. The eight month special enrollment period requires group coverage based on **current employment**. A retiree who skips Part B at 65 generally has to use the general enrollment period later, and eats the penalty.
 
 ### The income related adjustment and its two year lookback
 
@@ -470,7 +480,7 @@ For 2026, the standard premium applies up to $109,000 of modified adjusted gross
 
 Two consequences follow. Your final high earning years before separation set your Part B premium two years into retirement. And a Roth conversion at 63 raises your premium at 65. That makes IRMAA a planning constraint rather than a surprise, and it is why the tax strategy analysis and the health care bridge analysis have to be run together.
 
-You can appeal an adjustment on a life changing event basis, including work stoppage or work reduction, using Form SSA-44.
+You can ask SSA for a **new initial determination** on a life changing event basis, including work stoppage or work reduction, using Form SSA-44. That is the route people mean when they say they appealed IRMAA, and it is the one that works.
 
 ### Do not confuse FEHB with PSHB
 
@@ -490,7 +500,7 @@ Your Social Security statement projects your benefit **assuming you keep earning
 
 If you retire at 57 and claim at 67, those are ten zero earning years. Your real benefit is lower than the statement says, sometimes materially.
 
-**The fix, and it takes ten minutes.** Sign in at ssa.gov, open the Retirement Calculator inside your my Social Security account, and set the expected average future annual earnings field to **0**. Save both results. The zero earnings figures are your planning basis. The statement figures are the optimistic case.
+**The fix, and it takes ten minutes.** Sign in at ssa.gov, open the Retirement Calculator inside your my Social Security account, and set the field for the average annual income you expect to earn until retirement to **0**. Save both results. The zero earnings figures are your planning basis. The statement figures are the optimistic case.
 
 This error propagates twice, because the FERS Special Retirement Supplement is computed from the age 62 figure. Getting it wrong inflates both your Social Security line and your supplement line.
 
@@ -511,7 +521,7 @@ Provisional income is your adjusted gross income, plus tax exempt interest, plus
 | Single | $25,000 | $34,000 |
 | Married filing jointly | $32,000 | $44,000 |
 
-**These thresholds are not indexed to inflation.** SSA states they have not changed since Congress set them in 1983, and that this was deliberate. Every year they capture more people.
+**These thresholds are not indexed to inflation.** The $25,000 and $32,000 figures come from the 1983 amendments and the $34,000 and $44,000 figures from 1993. Neither pair has moved since, and SSA states that leaving them unindexed was deliberate. Every year they capture more people.
 
 For a FERS retiree this is structural rather than avoidable. Your annuity is fully taxable and counts in adjusted gross income, so most FERS retirees clear the 85 percent threshold on the annuity alone.
 
@@ -535,7 +545,7 @@ For anyone retiring between 55 and 59, this is the highest value fact in this gu
 
 ### Withdrawal mechanics
 
-Four options, usable in combination: partial distributions with a $1,000 minimum, total distribution, installment payments with a $25 minimum, and a life annuity purchase with a $3,500 minimum.
+Four options, usable in combination: partial distributions with a $1,000 minimum and no more than one every 30 days, total distribution, installment payments with a $25 minimum, and a life annuity purchase with a $3,500 minimum.
 
 Installments can be monthly, quarterly or annual, and **the amount and frequency can be changed at any time**. That has been true since September 15, 2019 and it replaced a much more restrictive rule that many published guides still describe.
 
@@ -570,7 +580,7 @@ Under current law the Roth TSP balance is **not** subject to lifetime required m
 | 1959 | Unsettled, see below |
 | 1960 or later | 75 |
 
-The 1959 birth year is genuinely unresolved. SECURE 2.0 contained a drafting conflict that assigned that cohort both 73 and 75, and the regulation leaves the subparagraph reserved. If you were born in 1959, treat this as an open item.
+The 1959 birth year is genuinely unresolved. SECURE 2.0 contained a drafting conflict that assigned that cohort both 73 and 75, and the subparagraph in the regulation is still reserved. Treasury **proposed age 73** for that cohort in July 2024 and has not finalized it, and nothing had changed as of September 2026. If you were born in 1959, plan on 73, treat it as an open item, and check it again before it binds.
 
 Note also that several IRS web pages have not been updated for the age 75 tier and still say 73 or 72. The regulation is the controlling text.
 
@@ -582,7 +592,7 @@ Not simply hours times your current hourly rate. Your agency **projects the leav
 
 So a separation in late December can have part of the lump sum paid at the following January’s rate.
 
-Included pay elements: basic pay, locality, special rate supplements, availability pay and similar. The ceiling is 240 hours for most employees, 360 overseas, 720 for SES. A retiree separating mid leave year can be paid the carried over balance **plus** the leave accrued during the final year, so the practical maximum is closer to 448 hours than to 240.
+Included pay elements: basic pay, locality, special rate supplements, availability pay and similar. The ceiling is 240 hours for most employees, 360 overseas, 720 for SES. A retiree who separates at the **end of the leave year** can be paid the carried over balance plus the whole year’s accrual, which at the 8 hours per pay period rate is 240 plus 208, or **448 hours**. Separate earlier in the leave year and the accrual portion shrinks in proportion, because accrual is earned only on completing a pay period. At lower accrual rates the maximum is lower: about 400 hours in the 3 to 15 year bracket and about 344 hours below three years.
 
 The payment is ordinary wage income in the year received, with federal and state tax, Social Security and Medicare withheld. **It cannot be deferred into the TSP.** Plan the net figure, not the gross.
 
@@ -590,7 +600,7 @@ Unused annual leave adds nothing to creditable service and nothing to your high-
 
 ### Why your separation date should be the last day of a month
 
-Your FERS annuity **commences on the first day of the month after separation**. FERS annuities are not prorated within a month.
+Your FERS annuity **commences on the first day of the month after separation**. FERS annuities are not prorated within a month. That is the rule for a voluntary retirement. A discontinued service or other involuntary retirement commences the day after separation instead, which is the one case where a mid month date costs you nothing.
 
 Separate on January 31 and your annuity accrues from February 1. Separate on January 1 and your annuity also accrues from February 1. The thirty extra days of work buy you nothing.
 
@@ -614,7 +624,13 @@ The five percent partial election is sufficient to keep FEHB alive for your spou
 
 That reframes the decision. It is not only “is fifty percent of my annuity worth ten percent of it.” It is also “what does my spouse’s health coverage cost if it ends the day I die.” No life insurance policy replicates FEHB eligibility.
 
-The election is irreversible after final adjudication of the retirement claim.
+**The deadline is not the one most people are given.** You may change the election in either direction up to **30 days after the date of your first regular monthly payment**. After that it opens one way only, and only in three situations.
+
+1. You may elect or increase a current spouse survivor annuity **within 18 months of the annuity commencing date**, paying a deposit equal to the retroactive difference plus 24.5 percent of your annual annuity for the full election, or 12.25 percent for the partial, with interest.
+2. You may elect a survivor annuity for a spouse you **marry after retirement**, within two years of that marriage, at a permanent actuarial reduction.
+3. The reduction ends automatically on divorce or on the death of your spouse, and may be restored on remarriage.
+
+You can never simply raise the election later for free. The 18 month window is the most commonly missed recoverable mistake in FERS retirement. If you elected none and have changed your mind, count the months before you do anything else.
 
 ## 2.16 VERA, the early out
 
@@ -1109,7 +1125,7 @@ That reframes the decision from “is fifty percent of my annuity worth ten perc
 
 **Then it checks beneficiary designations as a completeness item.** A stale beneficiary designation overrides a will. It is the cheapest and most frequently neglected fix in retirement planning and it takes one form per account.
 
-**What to watch for.** Spousal consent is required to elect anything less than the maximum. The election is irreversible after final adjudication of the retirement claim. This one goes to a fiduciary.
+**What to watch for.** Spousal consent is required to elect anything less than the maximum, the partial election included. The election may be changed in either direction up to 30 days after your first regular monthly payment, and after that only increased, through the 18 month deposit window or a post retirement marriage election. This one goes to a fiduciary.
 
 ## Block 12: Debt, housing, and one time events
 
@@ -1314,7 +1330,7 @@ The value of this system compounds with the number of months in it. One month is
 
 # Part 8: The Analysis Set
 
-Eleven deeper studies, built on request. Name one and Claude reads its specification from `docs/04- report-catalog.md`. They are listed in order of value for most people.
+Eleven deeper studies, built on request. Name one and Claude reads its specification from `docs/04-report-catalog.md`. They are listed in order of value for most people.
 
 ## 8.1 Income vs Burn Gap and Safe Withdrawal Rate
 
@@ -1410,11 +1426,13 @@ Every figure is flagged as planning analysis requiring confirmation by a tax pro
 
 Prices all three elections over both life expectancies, states the FEHB consequence in its own section because it usually decides the question, and compares against the term or permanent life insurance that would replace the survivor annuity, noting that no policy replicates FEHB eligibility.
 
-Ends with an explicit statement that spousal consent is required for anything less than the maximum and that the election is irreversible after final adjudication.
+Ends with an explicit statement that spousal consent is required for anything less than the maximum, that the election may be changed either way for 30 days after the first regular monthly payment, and that afterwards it can only be increased through the 18 month deposit window or a post retirement marriage election.
 
 ## 8.9 FEGLI Reduction Election Analysis
 
-Prices the SF 2818 election, which is made once and is one way thereafter.
+Prices the SF 2818 election. It can be changed in either direction for 30 days after your first regular monthly annuity payment, and after that it moves one way only, downward. You can never raise it again. Options B and C get one further election by the end of the month after the month you turn 65.
+
+The reduction rates differ by election and are commonly modeled wrong. The 75 percent reduction runs at 2 percent of the Basic Insurance Amount a month until 25 percent remains, roughly 37 months, and is premium free once reductions begin. The 50 percent reduction runs at **1 percent a month**, not 2, so it takes 50 months to floor at 50 percent, and the extra premium continues after 65. Reductions begin the first day of the second month after the later of age 65 or retirement.
 
 | Election | Coverage after 65 | Monthly cost per $1,000 before 65 | After 65 |
 |---|---|---|---|
@@ -1975,7 +1993,7 @@ Bold rows are the ones that come from a person rather than a portal. Send those 
 | MRA, born 1970 or later | 57 |
 | FERS multiplier | 1.0 percent, or 1.1 percent at 62 with 20 years |
 | MRA+10 reduction | 5/12 of 1 percent per month under 62, permanent |
-| Sick leave conversion | 2,087 hours per year, 8 hours per day |
+| Sick leave conversion | 2,087 hours per year on a 360 day year: about 174 hours per month, about 5.8 hours per day |
 | Military deposit | Generally 3 percent of military basic pay, plus interest |
 | Annual leave ceiling | 240 hours most employees, 360 overseas, 720 SES |
 | Survivor election | 50 percent survivor at a 10 percent reduction, or 25 percent at 5 percent |
@@ -2133,6 +2151,34 @@ The master prompt changed with it. Phase A creates and seeds the new folder, an 
 **One correction.** Two cross references in version 1.0.0 pointed at a Section 5.3 that does not exist. Both now point at Section 4.3, the three requests to send your benefits office.
 
 **One known gap.** The field labels inside Boldin's add and edit dialogs come from Boldin's help articles rather than from the live form. Section 9.4 says so, and the field map carries a corrections table for anything you find that differs.
+
+## 1.1.1, 16 September 2026
+
+**Every checkable claim in this guide was validated against primary sources, and twenty two items were corrected.** The standard applied was three independent authoritative sources per claim, drawn from OPM, the Code of Federal Regulations, the US Code, SSA, CMS, IRS, TSP, the Federal Register and congressional sources. Claims that could not reach three sources were to be marked unverified. None had to be.
+
+Two corrections change arithmetic a reader would otherwise get wrong.
+
+**Sick leave conversion.** Versions 1.0.0 and 1.1.0 said the conversion was "2,087 hours to a year, 8 hours to a day." The eight hour day is wrong. OPM converts on a 360 day retirement year, so a day is about 5.8 hours and a month about 174 hours. The old figure inflated a sick leave balance by roughly thirty eight percent. The order of operations was also stated backwards: sick leave days are added to actual service **before** the fractional month of the combined total is dropped, not truncated on their own first.
+
+**Sick leave and the 1.1 percent multiplier.** Both earlier versions said unused sick leave does not help reach the 20 years the 1.1 percent multiplier requires. OPM Benefits Administration Letter 18-103, dated 12 September 2018, says the opposite: sick leave credit can carry a retiree aged 62 or older from under 20 years to 20, and the annuity is then computed at 1.1 percent. Most secondary federal retirement commentary still carries the old answer.
+
+**The survivor election deadline was wrong.** Earlier versions said the election is irreversible after final adjudication of the retirement claim. The actual deadline is 30 days after the first regular monthly payment, and three increase-only routes survive it, including an 18 month window to elect or increase a current spouse annuity by paying a deposit. That window is the most commonly missed recoverable mistake in FERS retirement, and the old wording would have caused readers to miss it.
+
+The other corrections, in brief:
+
+| Section | Corrected |
+|---|---|
+| 2.3 | "Immediate" is 31 days in the regulation, not thirty. The four paths are scoped to regular voluntary retirement. |
+| 2.8 | The supplement formula is a ceiling. OPM zeroes out non-federal years rather than using your Social Security estimate. Earnings test timing and the cap on the reduction added. Legislative history corrected: the supplement repeal was absent from the Senate text rather than struck by the parliamentarian, and high-5 was dropped before the House vote. |
+| 2.9 | The COLA test is whether you are 62 on 1 December, not simply past your birthday. Exception list corrected: only military reserve technicians separated for disability are excepted. First year proration added. |
+| 2.10 | Forfeiture of FEHB is permanent only outside the waiver circumstances. The government share is set by the same formula rather than being identical in every case. |
+| 2.11 | An IRMAA life changing event request is a new initial determination. Employees still working at 65 do get the eight month special enrollment period. |
+| 2.12 | The taxation thresholds date from 1983 and 1993, not 1983 alone. The Social Security calculator field name corrected. |
+| 2.13 | Partial TSP distributions are limited to one every 30 days. Treasury has proposed age 73 for the 1959 cohort and has not finalized it. |
+| 2.14 | 448 hours is the end of leave year maximum at the 8 hour accrual rate, not a mid year figure. A discontinued service annuity commences the day after separation. |
+| Appendix C | Sick leave conversion row corrected. |
+
+Two file references broken by a line wrap in the 1.1.0 rebuild were also repaired.
 
 ## 1.0.0, 14 September 2026
 

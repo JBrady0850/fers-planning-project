@@ -4,6 +4,39 @@ All notable changes to this project are recorded here.
 
 Rules in this repository were verified in September 2026. Dollar figures are 2026 program year values and change annually. See `docs/06-fers-rules-reference.md` for citations and for the list of items that could not be verified.
 
+## [1.1.1] - 2026-09-16
+
+Every externally checkable claim in the guide and the rules reference was validated against primary sources, at a standard of three independent authoritative sources per claim, drawn from OPM, the Code of Federal Regulations, the US Code, SSA, CMS, IRS, TSP, the Federal Register and congressional sources. Twenty two items were corrected. No claim failed for want of sources.
+
+### Fixed, arithmetic
+
+- **Sick leave conversion.** The package said "2,087 hours to a year, 8 hours to a day." The eight hour day is wrong: OPM converts on a 360 day retirement year, so a day is about 5.8 hours and a month about 174 hours. The old figure inflated a sick leave balance by roughly 38 percent. The order of operations was also stated backwards. Sick leave days are added to actual service **before** the fractional month of the combined total is dropped, so truncating them on their own loses a month of annuity. Corrected in `docs/06-fers-rules-reference.md`, `MASTER-PROMPT.md` and the guide at 2.6 and Appendix C.
+- **Sick leave and the 1.1 percent multiplier.** The package said unused sick leave does not help reach the 20 years the 1.1 percent multiplier requires. OPM Benefits Administration Letter 18-103, dated 12 September 2018, says the opposite: sick leave credit can carry a retiree aged 62 or older from under 20 years to 20, and the annuity is then computed at 1.1 percent, because the multiplier is a computation rule and not an eligibility rule. Worth about ten percent of the annuity for life to anyone near the threshold.
+
+### Fixed, deadlines and decisions
+
+- **The survivor election deadline.** The package said the election is irreversible after final adjudication of the retirement claim. The real deadline is 30 days after the first regular monthly payment, and three increase-only routes survive it, including an 18 month window to elect or increase a current spouse annuity by paying a deposit. That window is the most commonly missed recoverable mistake in FERS retirement.
+- **The FEGLI election** is not made once either. It can be changed either way for 30 days after the first payment, then only downward, and Options B and C get one further election at 65. The 50 percent reduction also runs at 1 percent of the Basic Insurance Amount per month, not 2, so it takes 50 months to floor rather than 25.
+- **"Immediate" retirement** is 31 days in 5 CFR 842.204(c)(1)(ii), not the thirty OPM's consumer pages round it to.
+- **A discontinued service annuity** commences the day after separation, not the first of the following month, which the month end rule had stated as universal.
+
+### Fixed, precision
+
+- The COLA test is whether the retiree is 62 on 1 December, the date the adjustment takes effect, not simply past the birthday. Only military reserve technicians separated for disability are excepted. First year retirees receive a prorated adjustment.
+- The FERS Supplement formula is a ceiling rather than an estimate: OPM builds a synthetic earnings record from FERS basic pay alone and enters zero for every non federal year.
+- The Social Security taxation thresholds date from 1983 and 1993, not 1983 alone.
+- Treasury proposed age 73 for the 1959 required minimum distribution cohort in July 2024 and has not finalized it. The guide had said only that the question was unresolved.
+- Partial TSP distributions are limited to one every 30 days.
+- An IRMAA life changing event request is a new initial determination, and employees still working at 65 do get the eight month special enrollment period.
+- 448 hours is the end of leave year annual leave maximum at the 8 hour accrual rate, not a mid year figure.
+- FEHB forfeiture is permanent only outside the waiver circumstances, and the government share is set by the same formula rather than being identical in every case.
+- The supplement repeal was absent from the Senate reconciliation text rather than struck by the parliamentarian, and the high-5 proposal was dropped before the House vote.
+- Two file references broken by a line wrap in the 1.1.0 rebuild were repaired.
+
+### Verified unchanged
+
+The 2026 figures all confirmed against primary sources: Part B premium $202.90 and deductible $283, IRMAA thresholds $109,000 and $218,000 rising to $689.90, the FERS Supplement earnings test exempt amount $24,480, the COLAs at 2.8 percent CSRS and Social Security and 2.0 percent FERS, and the TSP and IRA limits at $24,500, $8,000, $11,250, $72,000, $7,500 and $1,100. The FEGLI Basic rates were confirmed, including that two OPM pages still publish the pre-2021 schedule, which the guide already flagged.
+
 ## [1.1.0] - 2026-09-16
 
 The Boldin loop closes. Version 1.0.0 could tell you what was wrong with a Boldin plan after you exported it. It could not tell you what to type to fix it, and it left the mapping between a document and the fields it touches in the operator's head. This release adds both halves.

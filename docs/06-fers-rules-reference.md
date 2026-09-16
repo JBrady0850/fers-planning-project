@@ -38,7 +38,7 @@ Corroboration: CSRS/FERS Handbook Chapter 42, https://www.opm.gov/retirement-cen
 | MRA + 30 | MRA | 30 years | None |
 | MRA + 10 | MRA | 10 to 29 years | Reduced |
 
-"Immediate" means the annuity begins within 30 days of separation.
+"Immediate" means the annuity begins no later than 31 days after separation, per 5 CFR 842.204(c)(1)(ii). For a voluntary retirement that is the first day of the month after separation. OPM consumer pages round this to 30 days; the regulation says 31.
 
 Source: OPM FERS Eligibility, https://www.opm.gov/retirement-center/fers-information/eligibility/
 Source: OPM Types of Retirement, https://www.opm.gov/retirement-center/fers-information/types-of-retirement/
@@ -108,11 +108,14 @@ Corroboration: https://www.myfederalretirement.com/fers-high-3-salary/
 
 **100 percent credit** toward the annuity computation for FERS retirements on or after January 1, 2014. Fifty percent credit applied from October 28, 2009 through December 31, 2013.
 
-**It does not count toward retirement eligibility, it does not raise the high-3, and it does not help reach the 20 years required for the 1.1 percent multiplier.** OPM states it "cannot be used in computing your high-3 average salary or for meeting the minimum length of service for retirement eligibility."
+**It does not count toward retirement eligibility and it does not raise the high-3.** OPM states it "cannot be used in computing your high-3 average salary or for meeting the minimum length of service for retirement eligibility."
 
-Conversion basis: **2,087 hours equals one year, 8 hours equals one day.** Residual days beyond whole months are dropped in the final computation.
+**It does, however, count toward the 20 years the 1.1 percent multiplier requires.** OPM Benefits Administration Letter 18-103, dated 12 September 2018, states that a retiree who is at least age 62, whose actual service is less than 20 years but increases to at least 20 years with the addition of unused sick leave credit, will have the annuity computed using the 1.1 percent formula. The reasoning is that the 1.1 percent factor is a computation rule rather than an eligibility rule. Most secondary federal retirement commentary still says the opposite.
+
+Conversion basis: **2,087 hours equals one year on the 360 day retirement year, being twelve months of thirty days.** One month is about 174 hours and one day about 5.8 hours. Eight hours to a day is the leave charging rule, not the annuity conversion, and using it overstates the credit by roughly 38 percent. Round **up** to the next figure on OPM's 2,087 hour chart, add the resulting months and days to actual service, and only then drop any leftover days of the combined total. Sick leave days can complete a partial month of real service, so truncating them first loses a month.
 
 Source: OPM RI 83-8, Credit for Unused Sick Leave, https://www.opm.gov/retirement-center/publications-forms/pamphlets/ri83-8.pdf
+Source: OPM BAL 18-103, unused sick leave and the 1.1 percent multiplier, https://www.opm.gov/retirement-center/publications-forms/benefits-administration-letters/2018/18-103.pdf
 Source: OPM Creditable Service, https://www.opm.gov/retirement-center/fers-information/creditable-service/
 Statutory authority: P.L. 111-84, NDAA FY2010, https://www.congress.gov/111/plaws/publ84/PLAW-111publ84.pdf
 Implementation: OPM BAL 10-101, https://www.opm.gov/retirement-center/publications-forms/benefits-administration-letters/2010/10-101.pdf
@@ -521,7 +524,7 @@ Source: https://www.ssa.gov/myaccount/assets/materials/EN-05-10686.pdf
 | Married filing jointly | $32,000 | $44,000 |
 | Married filing separately, lived together any part of the year | $0 | Taxable from the first dollar |
 
-**These thresholds are not indexed to inflation.** SSA states that they "have remained unchanged since Congress first established them" in 1983, by design, so the share of beneficiaries owing tax on benefits rises every year.
+**These thresholds are not indexed to inflation.** The $25,000 and $32,000 thresholds come from the 1983 amendments and the $34,000 and $44,000 thresholds from 1993. SSA states that they "have remained unchanged since Congress first established them", by design, so the share of beneficiaries owing tax on benefits rises every year.
 
 Source: SSA policy paper IP2015-02, https://www.ssa.gov/policy/docs/issuepapers/ip2015-02.html
 Source: IRS, https://www.irs.gov/faqs/social-security-income

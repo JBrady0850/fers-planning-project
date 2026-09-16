@@ -14,6 +14,7 @@ The Boldin loop closes. Version 1.0.0 could tell you what was wrong with a Boldi
 - `templates/boldin-entry-sheet.md`. The Entry Sheet itself: a header, one row per field, structural and irreversible rows called out separately, blocked rows naming the document that would unblock them, the expected effect on Chance of Success stated before entry, a re-export instruction, and a field map corrections table.
 - `docs/04-report-catalog.md` gains D11, the Boldin Entry Sheet, the first artifact in the catalog produced automatically rather than on request. Post-Retirement Findings moves to D12.
 - A ninth workspace folder, `08 Boldin Entry Sheets`, created by both setup scripts, which now also place the Entry Sheet template.
+- `guide-src/`, the markdown, template, stylesheet and build script the user guide PDF is produced from. The 1.0.0 PDF was published without its source, which made a small edit expensive. It is under version control now, and `guide-src/README.md` records the two WeasyPrint behaviours that govern the layout.
 
 ### Changed
 
@@ -25,7 +26,8 @@ The Boldin loop closes. Version 1.0.0 could tell you what was wrong with a Boldi
 ### Notes
 
 - FERS specific mapping choices are stated in the field map rather than assumed: the annuity is entered as two pension entries so the zero COLA before 62 and the diet COLA after it can both be modeled, the Special Retirement Supplement is a third entry ending at 62 with no COLA and nothing at all on an MRA+10 or deferred path, traditional and Roth TSP are separate accounts, FEHB is the annuitant premium treated as post tax, and the annual leave lump sum is a windfall rather than income.
-- `docs/FERS-Planning-Project-User-Guide.pdf` still describes the 1.0.0 package. It does not yet cover the Entry Sheet.
+- `docs/FERS-Planning-Project-User-Guide.pdf` rebuilt at 72 pages. Part 9 gains sections 9.4 and 9.5 covering the field map and the Entry Sheet, Part 8 gains section 8.11, Part 1, Part 3 and Part 7 carry the ninth folder and the new workflow, and a new Appendix E records the version history. The page geometry, type scale and pagination of the 1.0.0 edition are preserved, so every Part through Part 7 still begins on the page it did before.
+- One correction carried in the same rebuild: two cross references in the 1.0.0 guide pointed at a Section 5.3 that does not exist. Both now point at Section 4.3.
 
 ## [1.0.0] - 2026-09-14
 

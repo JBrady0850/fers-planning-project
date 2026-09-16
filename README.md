@@ -118,6 +118,12 @@ fers-planning-project/
 │   ├── 07-boldin-field-map-and-entry-engine.md
 │   │                                     Boldin screen by screen, and the Entry Sheet spec
 │   └── FERS-Planning-Project-User-Guide.pdf
+│                                          72 page user guide
+├── guide-src/                             Source the user guide is built from
+│   ├── guide.md
+│   ├── template.html
+│   ├── guide.css
+│   └── build.py
 ├── templates/
 │   ├── facts-register.md                 The single source of truth for every number
 │   ├── open-items.md                     Seeded with the eight questions to ask on day one

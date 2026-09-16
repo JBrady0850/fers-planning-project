@@ -2,7 +2,7 @@
 
 **A complete, evidence backed retirement planning system for United States federal employees, built to run in Claude Desktop against a folder of your own documents.**
 
-You get a project prompt, a fourteen block interview, a document intake checklist, sixteen report specifications, a monthly cycle that takes fifteen minutes, and a validation loop for Boldin. Every rule it uses is cited. Every number it produces is traced to a document you supplied.
+You get a project prompt, a fourteen block interview, a document intake checklist, seventeen report specifications, a monthly cycle that takes fifteen minutes, and a closed loop for Boldin that tells you exactly what to type and then checks that it landed. Every rule it uses is cited. Every number it produces is traced to a document you supplied.
 
 > ### Read this first
 >
@@ -112,13 +112,16 @@ fers-planning-project/
 │   ├── 01-read-me-first.md               Orientation, time budget, what it will not do
 │   ├── 02-setup-instructions.md          Step by step, written for a first time Claude user
 │   ├── 03-document-intake-checklist.md   Ten tiers, six marked minimum viable start
-│   ├── 04-report-catalog.md              Sixteen artifacts with methods
+│   ├── 04-report-catalog.md              Seventeen artifacts with methods
 │   ├── 05-boldin-setup-and-validation.md Entry map, validation loop, fifteen defect classes
 │   ├── 06-fers-rules-reference.md        Twenty two rule sections, 82 citations
+│   ├── 07-boldin-field-map-and-entry-engine.md
+│   │                                     Boldin screen by screen, and the Entry Sheet spec
 │   └── FERS-Planning-Project-User-Guide.pdf
 ├── templates/
 │   ├── facts-register.md                 The single source of truth for every number
-│   └── open-items.md                     Seeded with the eight questions to ask on day one
+│   ├── open-items.md                     Seeded with the eight questions to ask on day one
+│   └── boldin-entry-sheet.md             One row per Boldin field, what to type and what it replaces
 └── scripts/
     ├── New-FersWorkspace.ps1
     └── new-fers-workspace.sh
@@ -163,6 +166,8 @@ Export last month's transactions, type `run the monthly report`, and the plan re
 ### Phase E, the analysis set
 Eleven deeper studies built on request: income versus burn, retirement date comparison, cash bridge, health care bridge to 65, creditable service and deposits, Social Security claiming, tax strategy and the Roth conversion window, survivor election, FEGLI reduction election, Boldin validation, and a running findings register.
 
+One more is produced without being asked for. Every time a document is processed, the monthly cycle runs, or an analysis changes a Boldin input, Claude writes a **Boldin Entry Sheet** into `08 Boldin Entry Sheets/`: one row per field, giving the screen, the field, the exact value with its unit, what that value replaces, and the source it came from. You type the rows and mark each one ENTERED, then export and let the validation confirm the values landed. `docs/07-boldin-field-map-and-entry-engine.md` is the map behind it, and it also carries the reverse map, document to fields, so an arriving statement produces its own list of entries.
+
 ---
 
 ## The three rules that make it work
@@ -179,7 +184,7 @@ Eleven deeper studies built on request: income versus burn, retirement date comp
 
 Quoting the RETIRED lens surplus as spendable cash today is the most common error in this whole method, and it overstates how fast you can build a cash bridge.
 
-**3. Validate the tool against your documents, not the other way around.** Boldin is a calculator. A calculator returns exactly what you feed it. Enter your data, export the results, check the export line by line against your own documents, correct what is wrong, re-export. The disagreements are the point. When Boldin turns out to be right and your own model wrong, say so first and fix the model.
+**3. Validate the tool against your documents, not the other way around.** Boldin is a calculator. A calculator returns exactly what you feed it. Enter your data, export the results, check the export line by line against your own documents, correct what is wrong, re-export. The disagreements are the point. When Boldin turns out to be right and your own model wrong, say so first and fix the model. A value is not considered entered because an Entry Sheet told you to enter it. It is considered entered when the next export shows it.
 
 ---
 

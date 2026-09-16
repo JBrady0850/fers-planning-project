@@ -6,8 +6,8 @@
 #   ./scripts/new-fers-workspace.sh ~/Documents/"FERS Planning"
 #   ./scripts/new-fers-workspace.sh ~/Documents/"FERS Planning" --force
 #
-# Existing folders are left alone. The two register files are never overwritten
-# unless --force is supplied, because they hold your data.
+# Existing folders are left alone. The register files and the Entry Sheet template
+# are never overwritten unless --force is supplied, because they hold your data.
 #
 # Part of https://github.com/JBrady0850/fers-planning-project
 # MIT licensed. Not financial advice. See DISCLAIMER.md.
@@ -52,6 +52,7 @@ FOLDERS=(
     "05 Boldin"
     "06 Open Items"
     "07 Archive"
+    "08 Boldin Entry Sheets"
 )
 
 echo
@@ -99,6 +100,7 @@ place_template() {
 
 place_template "$REPO_ROOT/templates/facts-register.md" "02 Baseline/Facts Register.md"
 place_template "$REPO_ROOT/templates/open-items.md"     "06 Open Items/Open Items.md"
+place_template "$REPO_ROOT/templates/boldin-entry-sheet.md" "08 Boldin Entry Sheets/Boldin Entry Sheet Template.md"
 
 echo
 echo "${CYAN}Workspace ready.${RESET}"

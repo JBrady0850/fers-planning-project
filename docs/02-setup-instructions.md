@@ -47,9 +47,10 @@ FERS Planning/
     05 Boldin/
     06 Open Items/
     07 Archive/
+    08 Boldin Entry Sheets/
 ```
 
-Then copy `templates/facts-register.md` into `02 Baseline/` and rename it `Facts Register.md`, and copy `templates/open-items.md` into `06 Open Items/` and rename it `Open Items.md`.
+Then copy `templates/facts-register.md` into `02 Baseline/` and rename it `Facts Register.md`, and copy `templates/open-items.md` into `06 Open Items/` and rename it `Open Items.md`. Copy `templates/boldin-entry-sheet.md` into `08 Boldin Entry Sheets/` as well and rename it `Boldin Entry Sheet Template.md`. Claude copies it forward with a date every time a Boldin value changes.
 
 What each folder holds:
 
@@ -64,6 +65,7 @@ What each folder holds:
 | `05 Boldin` | Boldin exports and the validation reports that check them. |
 | `06 Open Items` | The running list of unanswered questions. |
 | `07 Archive` | Superseded versions. Nothing is ever deleted, only archived. |
+| `08 Boldin Entry Sheets` | The dated Entry Sheets that tell you exactly what to type into Boldin, and what each value replaces. |
 
 **Decide now where the raw documents live.** This workspace will hold leave and earnings statements, TSP statements, benefit estimates and tax returns, which carry account numbers and Social Security numbers. If the folder is shared with anyone, they can read all of it. If it syncs to a personal cloud account, those documents leave your machine.
 
@@ -147,6 +149,8 @@ That is the entire recurring commitment. Fifteen minutes a month, and the plan t
 Boldin is a strong tool and it is worth the subscription. It is also a calculator, and a calculator returns exactly what you feed it. Its defaults were written for a general audience, and several of them are wrong for a FERS employee.
 
 Set it up, then follow `docs/05-boldin-setup-and-validation.md`. The workflow is a loop: enter your data in Boldin, export the results, have Claude check the export against your own documents, correct what is wrong, re export. Boldin and your own model disagreeing is not a problem. The disagreement is the point, because it is where the errors surface.
+
+You do not have to work out what to type. Every time Claude processes a document, runs the monthly cycle, or produces an analysis that changes a Boldin input, it writes an **Entry Sheet** into `08 Boldin Entry Sheets/`. The sheet is one row per field: the screen, the field, the exact value with its unit, what that value replaces, and where it came from. You type the rows, mark each one ENTERED, then export and let the validation confirm the values landed. The map behind it is `docs/07-boldin-field-map-and-entry-engine.md`. You never have to ask for an Entry Sheet, and you never guess which box a number goes in.
 
 Do not skip the validation step. A retirement plan that looks solvent because one input is wrong is worse than no plan at all, because it stops you from acting while there is still time to act.
 

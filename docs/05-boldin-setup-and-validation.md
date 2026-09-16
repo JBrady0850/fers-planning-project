@@ -4,6 +4,8 @@ Boldin is a capable planner. It is also a calculator, and a calculator returns e
 
 The method here is a loop, not a setup. Enter the data, export the results, check the export against your own documents, correct what is wrong, re export. The value is in the disagreements.
 
+**This file is one half of that loop.** It tells you what is wrong and how to test for it. `docs/07-boldin-field-map-and-entry-engine.md` is the other half, and it tells you where every value goes, screen by screen, and specifies the Entry Sheet that turns a finding here into a row you can type. Every defect class below is cited by number from that file. Read Part 1 here for the short mapping and the field map for the full one.
+
 Everything in the defect list below came out of running this loop on a real FERS plan. The single largest correction found was Defect Class 1, and it moved projected net worth at longevity by more than three hundred thousand dollars. The second largest was Defect Class 3, a single dropdown setting, and correcting it moved the Chance of Success figure by twenty two points. Neither was visible without exporting and checking.
 
 ---
@@ -51,8 +53,9 @@ Run this after the first setup, after any material entry change, and quarterly.
 1. In Boldin, export the **planner summary CSV** for the scenario and download the **PDF report**. Save both to `05 Boldin` with the date in the file name.
 2. Tell the assistant: `Run a Boldin validation against the export dated YYYY-MM-DD.`
 3. It checks every line against the Facts Register and the source documents and produces `05 Boldin/Boldin Validation YYYY-MM-DD.md`.
-4. Correct the defects in Boldin.
-5. Re export and re run. Iterate until every remaining difference is explained.
+4. The validation writes its defects into the next Entry Sheet in `08 Boldin Entry Sheets`, one row per field, rather than leaving them as prose to be interpreted.
+5. Correct the defects in Boldin, marking each Entry Sheet row ENTERED as you go.
+6. Re export and re run. Iterate until every remaining difference is explained.
 
 A validation report is valid only against the export it was run on. Change an entry, and the prior validation is stale.
 

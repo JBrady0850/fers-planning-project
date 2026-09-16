@@ -47,6 +47,7 @@ When two sources disagree, state the conflict, show both figures, identify which
 - Ask clarifying questions when a choice changes the approach. Never guess silently.
 - Never overwrite an existing file. Append, patch, or write a new dated version and archive the old one.
 - Show your arithmetic for any figure that drives a decision.
+- Any turn that changes a value Boldin holds also produces or appends to the Entry Sheet for that date in `08 Boldin Entry Sheets`, following `docs/07-boldin-field-map-and-entry-engine.md`. The user never has to ask for one.
 - Federal benefit rules change. Before any figure drives a filing decision, re verify it at opm.gov, tsp.gov, ssa.gov or medicare.gov and say that you did.
 
 ## PHASE A: SETUP CHECK
@@ -62,7 +63,8 @@ Run this once, at the start of the first conversation only.
    - `05 Boldin` (exports, entry maps, validation reports)
    - `06 Open Items` (unresolved questions and pending actions)
    - `07 Archive` (superseded versions)
-3. Confirm `02 Baseline/Facts Register.md` exists. If it does not, create it from `templates/facts-register.md`.
+   - `08 Boldin Entry Sheets` (dated Entry Sheets, one row per Boldin field)
+3. Confirm `02 Baseline/Facts Register.md` exists. If it does not, create it from `templates/facts-register.md`. Confirm `08 Boldin Entry Sheets` holds a copy of `templates/boldin-entry-sheet.md`, and place one there if it does not.
 4. Inventory `01 Source Documents` and report which items on the intake checklist are present and which are missing.
 5. State what you can build today with what is present, and what is blocked and by which missing document.
 
@@ -421,7 +423,7 @@ Then check beneficiary designations as a completeness item. A stale beneficiary 
 4. What Chance of Success does the tool currently show, and under which scenario.
 5. Has the user entered anything they are unsure about.
 
-Then follow `docs/05-boldin-setup-and-validation.md`.
+Then follow `docs/05-boldin-setup-and-validation.md` for the defect tests, and `docs/07-boldin-field-map-and-entry-engine.md` for where every value goes, screen by screen. Close this block by producing the first Entry Sheet in `08 Boldin Entry Sheets`, ordered by impact, with the annuity COLA, the withdrawal strategy, the annuity start date and the supplement at the top.
 
 ---
 
@@ -460,7 +462,8 @@ Once the baseline exists, run this every month. The user triggers it by saying `
 9. Re run the feasibility analysis with the new trailing burn. **If the verdict changes in either direction, say so at the top of the report in plain language. Never update the numbers and leave a stale verdict sentence in place.**
 10. Move processed raw files to `01 Source Documents/Old Raw Data` with a `YYYY-MM ` filename prefix.
 11. Update `06 Open Items/Open Items.md`.
-12. Once per quarter, add the sick leave and annual leave balances from the current leave and earnings statement and restate the sick leave credit in annuity dollars.
+12. Produce or append to `08 Boldin Entry Sheets/Boldin Entry Sheet YYYY-MM-DD.md` for every figure this month changed that Boldin holds. Carry forward every row from the prior sheet still marked NOT STARTED or BLOCKED.
+13. Once per quarter, add the sick leave and annual leave balances from the current leave and earnings statement and restate the sick leave credit in annuity dollars.
 
 ## PHASE E: THE ANALYSIS SET
 
@@ -476,7 +479,8 @@ Build these on request, in this order of value. Specifications are in `docs/04-r
 8. Survivor Election Analysis
 9. FEGLI Reduction Election Analysis
 10. Boldin Validation Report
-11. Post-Retirement Findings register
+11. Boldin Entry Sheet, produced automatically after any change to a Boldin input rather than on request
+12. Post-Retirement Findings register
 
 ## STANDING FERS RULES AND TRAPS
 
@@ -522,6 +526,7 @@ A report is finished only when all of the following hold. State this checklist a
 - Open items are listed with the size of their potential impact.
 - The file is written to the correct project subfolder with the date in the file name.
 - The prior version, if any, was archived rather than overwritten.
+- If the report changed any value Boldin holds, an Entry Sheet for that date exists in `08 Boldin Entry Sheets`, one row per field, every row citing its source and naming what it replaces.
 
 =====
 

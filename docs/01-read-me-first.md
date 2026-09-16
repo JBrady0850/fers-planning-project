@@ -1,6 +1,6 @@
 # READ ME FIRST: HOW TO USE THIS PACKAGE
 
-Nine files. They cross-reference each other by path, so the set only works whole. Read this page, then go to `docs/02-setup-instructions.md`. Do not read the others first.
+Eleven files. They cross-reference each other by path, so the set only works whole. Read this page, then go to `docs/02-setup-instructions.md`. Do not read the others first.
 
 | File | Who reads it | Purpose |
 |---|---|---|
@@ -8,17 +8,19 @@ Nine files. They cross-reference each other by path, so the set only works whole
 | `docs/02-setup-instructions.md` | You, first | Install, folder structure, load the prompt, run the interview. Written for someone who has never used Claude. |
 | `MASTER-PROMPT.md` | You copy the middle of it | The engine. Everything between the two lines of equals signs goes into the project Instructions field. |
 | `docs/03-document-intake-checklist.md` | You | Ten tiers of documents, where each one comes from, and why it matters. Six items are marked as the minimum viable start. |
-| `docs/04-report-catalog.md` | Claude, mostly | Sixteen artifacts with methods and a shared definition of done. You name one, Claude reads the spec. |
+| `docs/04-report-catalog.md` | Claude, mostly | Seventeen artifacts with methods and a shared definition of done. You name one, Claude reads the spec. |
 | `docs/05-boldin-setup-and-validation.md` | You and Claude | Entry mapping, the validation loop, and fifteen defect classes with tests and fixes. |
 | `docs/06-fers-rules-reference.md` | Both | Every FERS, TSP, FEHB, FEGLI, Social Security and Medicare rule used here, with the citation. |
 | `templates/facts-register.md` | Claude writes into it | The single source of truth for every number in the plan. Copied to `02 Baseline/Facts Register.md` during setup. |
 | `templates/open-items.md` | Claude writes into it | The running list of unanswered questions, seeded with the eight you should send your benefits office on day one. |
+| `docs/07-boldin-field-map-and-entry-engine.md` | You and Claude | Where every value goes inside Boldin, screen by screen, and the specification for the Entry Sheet. The validation guide tells you what is wrong. This one tells you what to type. |
+| `templates/boldin-entry-sheet.md` | Claude writes into it | The deliverable that turns processed documents into a typed list of Boldin entries. Copied to `08 Boldin Entry Sheets/` with the date. |
 
 ---
 
 ## WHAT THIS IS, IN ONE PARAGRAPH
 
-It is a working retirement planning system for one federal employee, built to run in Claude Desktop with a connected folder. You get a folder structure, a project prompt, a fourteen block interview, a monthly cycle that takes fifteen minutes, and sixteen report specifications. The method came out of a federal employee running his own FERS plan for two years and finding out, the expensive way, which numbers a planning tool gets wrong. The parts that matter are the parts that took him months to learn: three separate expense lenses that never get mixed, a no invented numbers rule, a trailing actual burn rate that replaces modeled spending, and the habit of validating the planning tool against your own documents rather than trusting it.
+It is a working retirement planning system for one federal employee, built to run in Claude Desktop with a connected folder. You get a folder structure, a project prompt, a fourteen block interview, a monthly cycle that takes fifteen minutes, and seventeen report specifications. The method came out of a federal employee running his own FERS plan for two years and finding out, the expensive way, which numbers a planning tool gets wrong. The parts that matter are the parts that took him months to learn: three separate expense lenses that never get mixed, a no invented numbers rule, a trailing actual burn rate that replaces modeled spending, and the habit of validating the planning tool against your own documents rather than trusting it.
 
 ---
 
@@ -68,6 +70,7 @@ The document gathering in the middle column is the part that takes real calendar
 - Your four eligibility dates are derived, written down, and reconciled against the date you had in your head.
 - One monthly report exists, built from real transactions rather than from a remembered budget.
 - Boldin is set up and validated, and you know which of its figures to trust and which to override.
+- At least one Entry Sheet exists in `08 Boldin Entry Sheets`, every row on it marked ENTERED or BLOCKED, and the export that confirms those values is saved in `05 Boldin`.
 - The Open Items list is short, and every item on it names the specific document that would close it.
 
 ---

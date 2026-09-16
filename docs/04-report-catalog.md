@@ -1,6 +1,6 @@
 # REPORT CATALOG AND SPECIFICATIONS
 
-Sixteen artifacts. Two are living registers that are never finished. Two run monthly. The rest are built on request and rebuilt when an input changes.
+Seventeen artifacts. Two are living registers that are never finished. Two run monthly. One is produced automatically every time a Boldin input changes. The rest are built on request and rebuilt when an input changes.
 
 To request any of them, name it. The assistant reads this file for the specification.
 
@@ -265,7 +265,21 @@ Model Options A, B and C separately. Option A reduces 2 percent per month after 
 
 **Rule.** When Boldin is right and your own model is wrong, say so first and correct the model. That result is common, and it is the strongest evidence the validation loop works.
 
-### D11. Post-Retirement Findings
+### D11. Boldin Entry Sheet
+
+`08 Boldin Entry Sheets/Boldin Entry Sheet YYYY-MM-DD.md`
+
+**Purpose.** Turn processed data into instructions precise enough to type into Boldin without thinking. Full specification in `docs/07-boldin-field-map-and-entry-engine.md`, Part 4. Template in `templates/boldin-entry-sheet.md`.
+
+**Cadence.** Automatic, not on request. Any turn that processes a source document, runs the monthly cycle, or produces an analysis that changes a Boldin input also produces or appends to the Entry Sheet for that date.
+
+**Structure.** A header naming the scenario and what triggered the sheet. One table row per field, carrying screen, sub-section, item, field, the value to type with its unit, what it replaces, the source, and a status. Then the structural and irreversible rows, the blocked rows, the expected effect on Chance of Success stated before entry, the re-export instruction, and any field map corrections found on screen.
+
+**Rules.** One field per row. Never bundle two fields. Every row cites a source or it does not ship. Order by impact so a session that stops halfway still captured the important half. A missing input produces a `BLOCKED` row naming the document that would close it, never an invented value.
+
+**Definition of done.** The Entry Sheet is not finished when the rows are written. It is finished when the next Boldin export shows the values, confirmed by a Boldin Validation Report run against that export. Open rows carry forward into the next sheet rather than being abandoned.
+
+### D12. Post-Retirement Findings
 
 `04 Analysis/Post-Retirement Findings.md`
 

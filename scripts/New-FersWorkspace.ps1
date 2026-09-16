@@ -3,9 +3,11 @@
     Builds the FERS Planning Project workspace folder tree and places the living registers.
 
 .DESCRIPTION
-    Creates the eight working folders the master prompt expects, then copies
-    templates/facts-register.md to "02 Baseline\Facts Register.md" and
-    templates/open-items.md to "06 Open Items\Open Items.md".
+    Creates the nine working folders the master prompt expects, then copies
+    templates/facts-register.md to "02 Baseline\Facts Register.md",
+    templates/open-items.md to "06 Open Items\Open Items.md", and
+    templates/boldin-entry-sheet.md to
+    "08 Boldin Entry Sheets\Boldin Entry Sheet Template.md".
 
     Existing folders are left alone. Existing register files are never
     overwritten unless -Force is supplied, because they hold your data.
@@ -14,7 +16,7 @@
     Where to build the workspace. Created if it does not exist.
 
 .PARAMETER Force
-    Overwrite the two register files if they already exist. Use with care.
+    Overwrite the register files and the Entry Sheet template if they already exist. Use with care.
 
 .EXAMPLE
     .\New-FersWorkspace.ps1 -Path "C:\Users\you\Documents\FERS Planning"
@@ -46,7 +48,8 @@ $folders = @(
     '04 Analysis',
     '05 Boldin',
     '06 Open Items',
-    '07 Archive'
+    '07 Archive',
+    '08 Boldin Entry Sheets'
 )
 
 # Locate the repository root relative to this script, so the templates are found
@@ -54,7 +57,8 @@ $folders = @(
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $templates = @(
     @{ Source = Join-Path $repoRoot 'templates\facts-register.md'; Destination = '02 Baseline\Facts Register.md' },
-    @{ Source = Join-Path $repoRoot 'templates\open-items.md';     Destination = '06 Open Items\Open Items.md' }
+    @{ Source = Join-Path $repoRoot 'templates\open-items.md';     Destination = '06 Open Items\Open Items.md' },
+    @{ Source = Join-Path $repoRoot 'templates\boldin-entry-sheet.md'; Destination = '08 Boldin Entry Sheets\Boldin Entry Sheet Template.md' }
 )
 
 Write-Host ''

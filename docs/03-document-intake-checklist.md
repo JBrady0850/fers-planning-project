@@ -8,6 +8,8 @@ Priority key:
 - **P2** blocks the Readiness Baseline.
 - **P3** blocks a specific analysis but not the baseline.
 
+Every document below feeds specific Boldin fields. Part 3 of `docs/07-boldin-field-map-and-entry-engine.md` is the reverse map, document to fields, and it is what turns an arriving document into an Entry Sheet without anyone deciding by hand what the document touched.
+
 ---
 
 ## TIER 1: FERS SERVICE AND ELIGIBILITY (P1)

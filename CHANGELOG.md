@@ -4,6 +4,29 @@ All notable changes to this project are recorded here.
 
 Rules in this repository were verified in September 2026. Dollar figures are 2026 program year values and change annually. See `docs/06-fers-rules-reference.md` for citations and for the list of items that could not be verified.
 
+## [1.1.0] - 2026-09-16
+
+The Boldin loop closes. Version 1.0.0 could tell you what was wrong with a Boldin plan after you exported it. It could not tell you what to type to fix it, and it left the mapping between a document and the fields it touches in the operator's head. This release adds both halves.
+
+### Added
+
+- `docs/07-boldin-field-map-and-entry-engine.md`. The Boldin planner mapped screen by screen: nine screens with their URLs and sub-sections as observed in a signed-in planner on 2026-09-15, a field inventory tying every input to the document and the interview block that produce it, a reverse map from document to fields, the Entry Sheet specification, the full loop from arriving document to confirmed export, and the twelve things most likely to be wrong in a FERS plan. Six sources cited, with the observed and the documented parts of the map separated so a reader knows which is which.
+- `templates/boldin-entry-sheet.md`. The Entry Sheet itself: a header, one row per field, structural and irreversible rows called out separately, blocked rows naming the document that would unblock them, the expected effect on Chance of Success stated before entry, a re-export instruction, and a field map corrections table.
+- `docs/04-report-catalog.md` gains D11, the Boldin Entry Sheet, the first artifact in the catalog produced automatically rather than on request. Post-Retirement Findings moves to D12.
+- A ninth workspace folder, `08 Boldin Entry Sheets`, created by both setup scripts, which now also place the Entry Sheet template.
+
+### Changed
+
+- `MASTER-PROMPT.md`. Phase A creates and seeds the new folder. An operating rule makes the Entry Sheet automatic on any turn that changes a value Boldin holds. Block 14 closes by producing the first sheet. Phase D adds a step 12 that carries unfinished rows forward. Phase E lists the Entry Sheet. The definition of done fails a report that changed a Boldin value without producing one.
+- `docs/05-boldin-setup-and-validation.md` now states plainly that it is one half of a loop and the field map is the other. Its validation sequence writes defects into the next Entry Sheet as rows rather than leaving them as prose.
+- `docs/03-document-intake-checklist.md` points at the reverse map, so an arriving document produces its own list of entries.
+- `docs/01-read-me-first.md`, `docs/02-setup-instructions.md` and `README.md` updated for eleven files, seventeen artifacts, the ninth folder, and the Entry Sheet workflow.
+
+### Notes
+
+- FERS specific mapping choices are stated in the field map rather than assumed: the annuity is entered as two pension entries so the zero COLA before 62 and the diet COLA after it can both be modeled, the Special Retirement Supplement is a third entry ending at 62 with no COLA and nothing at all on an MRA+10 or deferred path, traditional and Roth TSP are separate accounts, FEHB is the annuitant premium treated as post tax, and the annual leave lump sum is a windfall rather than income.
+- `docs/FERS-Planning-Project-User-Guide.pdf` still describes the 1.0.0 package. It does not yet cover the Entry Sheet.
+
 ## [1.0.0] - 2026-09-14
 
 First public release.

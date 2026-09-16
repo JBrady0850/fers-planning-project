@@ -142,12 +142,104 @@ Source: OPM BAL 11-103, https://www.opm.gov/retirement-center/publications-forms
 
 **Stale source warning.** Handbook Chapter 21, dated 1998, states that a FERS employee who takes a refund may not make a redeposit. That is superseded by P.L. 111-84 and BAL 11-103.
 
-**Military service deposit.** Pre-1957 military service is creditable with no deposit. Post-1956 military service requires a deposit to count for **either eligibility or computation**. The amount is generally **3 percent of military basic pay**, with variations of 3.25 percent for 1999 service and 3.40 percent for 2000 service. Interest begins on the second anniversary of the FERS coverage start date and compounds annually, with no interest charged if the deposit is completed before the end of the year after interest begins, which yields an interest free window of roughly three years from entry on duty. **The deposit must be paid before separation from federal service. OPM cannot accept it after retirement.**
+### 7.1 Service Computation Dates, and which one governs
 
+A federal employee carries several Service Computation Dates. They are different numbers computed under different rules, and they are not interchangeable. Four are standard.
+
+| Date | What it governs |
+|---|---|
+| SCD Leave | The annual leave accrual rate, 4, 6 or 8 hours per pay period |
+| **SCD Retirement** | **Retirement eligibility and the years of service in the annuity formula** |
+| SCD RIF | Retention standing in a reduction in force, under 5 CFR 351 subpart E |
+| SCD TSP | Vesting in the agency automatic 1 percent contribution, and the maximum TSP loan. It cannot predate 1 January 1984 |
+
+**Only the retirement SCD governs anything in this plan.**
+
+**Block 31 of the SF 50 carries the leave SCD.** The retirement SCD is not printed on the SF 50 at all. It is held in the agency personnel and payroll system and has to be requested from the benefits office in writing. OPM states the point directly in its leave accrual guidance: "the SCD-Leave is not used for retirement benefit calculations."
+
+The two dates diverge most often over military service. The leave SCD credits honorable active duty with no payment. The retirement SCD credits post-1956 military service only once the deposit below is paid. Someone with four years of active duty and no deposit therefore carries a leave SCD four years earlier than the retirement SCD, and every eligibility date computed off the leave SCD is four years too early. That error is the single most common way a FERS plan starts wrong.
+
+For **leave accrual only**, a retired member of a uniformed service receives full credit for military service in three cases: the retirement was for a disability incurred in combat or caused by an instrumentality of war, or the service was during a war or in a campaign or expedition for which a campaign badge was authorized, or the employee held a covered position on 30 November 1964 and has served continuously since. This restriction is in 5 USC 6303. It governs the leave SCD and has no bearing on the retirement SCD.
+
+Source: OPM Guide to Processing Personnel Actions Chapter 6, https://www.opm.gov/policy-data-oversight/data-analysis-documentation/personnel-documentation/servicecreditleave.pdf
+Source: OPM Federal Ball Park Estimator, SCD, https://www.opm.gov/retirement-services/calculators/federal-ball-park-estimator/SCDpop.html
+Source: 5 USC 6303, https://www.law.cornell.edu/uscode/text/5/6303
+
+### 7.2 Military service credit deposit, the buy back
+
+**What is creditable.** Active duty in the armed forces, honorably terminated. Service at West Point, Annapolis, the Air Force Academy and the Coast Guard Academy became creditable under the 2008 National Defense Authorization Act, which amended the definition of military service at 5 USC 8401(31). Merchant Marine Academy service is not creditable. Reserve **active duty for training**, such as the annual two week camp or cruise, is creditable; weekly and monthly **drill** periods are not. National Guard service counts only when federalized, meaning ordered to active duty in the service of the United States, or full time National Guard duty that interrupted civilian service and was followed by reemployment on or after 1 August 1990.
+
+**Pre-1957 service.** Creditable with no deposit and no action.
+
+**Post-1956 service.** Requires a deposit to count for **either eligibility or computation**. This is stricter than CSRS. Under FERS there is no Catch-62 and no partial credit: an unpaid deposit means the service does not exist for retirement purposes.
+
+**The amount.** **3 percent of the military basic pay earned during the service**, with two statutory variations: **3.25 percent for service performed in 1999** and **3.40 percent for service performed in 2000**. The CSRS rate is 7 percent, which is why a figure quoted from a CSRS source will be more than double the right answer.
+
+**Interest.** Interest begins on the **second anniversary of the date FERS coverage began**, not the date of the military service and not the date of the application, and compounds annually thereafter. No interest is charged at all if the deposit is completed before the end of the year after interest begins, which yields an interest free window of roughly three years from the FERS coverage start date. The rate is variable, set each year by the Treasury under 5 USC 8334(e) and published by OPM in an annual Benefits Administration Letter. **The 2026 rate is 4.250 percent.** An individual account is charged a composite rate blending the current and prior year rates around that person's Interest Accrual Date, which is recorded on the SF 3108A.
+
+**Where and by when.** The deposit is paid **to the employing agency**, which forwards it to the Civil Service Retirement and Disability Fund. It must be **paid in full before the separation on which the retirement is based**. A separated employee may not make the deposit, and OPM cannot accept it afterward. The narrow exceptions are a survivor paying before OPM adjudicates the survivor claim, and a late completion allowed by OPM where an administrative error occurred. Treat the deadline as absolute.
+
+**The forms, in order.**
+
+| Step | Form | Goes to |
+|---|---|---|
+| 1. Prove the service | DD Form 214, Certificate of Release or Discharge from Active Duty | Held by the employee |
+| 2. Price the service | RI 20-97, Estimated Earnings During Military Service | The finance center of the branch served, one form per branch, addresses on the back of the form |
+| 3. Apply | SF 3108, Application to Make Service Credit Payment, FERS | The agency benefits office |
+| 4. Apply, military supplement | SF 3108A, Application to Pay Military Deposit for Military Service Performed After December 31, 1956, FERS | The agency benefits office |
+| 5. Pay | Lump sum or payroll deduction; DFAS serviced employees pay through Pay.gov | The agency payroll provider |
+| 6. Close it out | Paid in full letter, and a corrected retirement SCD | Keep both |
+
+If the DD-214 is missing, request it from the National Personnel Records Center through eVetRecs or Standard Form 180, or through milConnect for recent separations.
+
+**Timing.** DFAS states an official estimated earnings statement takes about 60 business days. The Department of Transportation states the whole process takes approximately six months. DFAS also publishes an unofficial Military Service Deposits Estimator, which gives a rough figure but cannot be used to apply. Start early: interest compounds while the paperwork moves.
+
+**Military retired pay must usually be waived.** Under 5 USC 8411(c)(2), military service for which retired pay is awarded cannot be credited toward a FERS annuity unless the retired pay falls into one of two categories:
+
+1. Retired pay awarded on account of **a service connected disability incurred in combat with an enemy of the United States**, or **a service connected disability caused by an instrumentality of war and incurred in line of duty during a period of war**. Either prong alone is sufficient.
+2. Retired pay awarded under **chapter 1223 of title 10**, being reserve retired pay for non-regular service, generally payable at age 60. This is not waived.
+
+Everyone else must waive. The waiver goes to **DFAS, not to OPM**, and the Handbook directs that it be filed at least 90 days and no later than 60 days before the annuity commencing date. **The waiver must state on its face that the retired pay is being waived for civil service retirement purposes**, or OPM cannot allow the credit. **A waiver does not replace the deposit.** A retiree who waives retired pay must still pay the deposit.
+
+VA disability compensation is not military retired pay. A non-disability civil service retiree does not renounce VA benefits in order to receive credit for military service.
+
+**Reading note.** 5 CFR 842.306(b)(3) still cites "chapter 67 of title 10," the pre-1994 numbering for what the Reserve Officer Personnel Management Act renumbered as chapter 1223. The statute and the regulation mean the same provision.
+
+**Open item.** No authority reached during the validation pass settles how Combat-Related Special Compensation or Concurrent Retirement and Disability Pay interact with this waiver rule. Send that question to the benefits office and to DFAS rather than assuming an answer.
+
+**What the deposit buys, and what it does not.**
+
+| Buys | Does not buy |
+|---|---|
+| Years of creditable service for eligibility | Any part of the high-3. The high-3 averages **civilian** rates of basic pay, and military basic pay never enters it |
+| Years of creditable service in the annuity computation | A larger FERS supplement. The supplement numerator excludes military service even where the deposit is paid, except active duty performed on military leave from a civilian FERS position under USERRA |
+| Progress toward the 20 year threshold for the 1.1 percent multiplier | A refund on demand. The deposit cannot be withdrawn on its own |
+
+**Refunds.** The deposit is returned only inside a full refund of FERS deductions after separation, or inside an alternative annuity lump sum at retirement. **Once refunded, a FERS employee has no right to pay it again.** This differs from CSRS redeposit rules.
+
+**Break-even.**
+
+```
+Annual annuity increase = years bought x multiplier x high-3
+Break-even in years     = deposit cost including interest / annual annuity increase
+```
+
+The multiplier is 0.01, or 0.011 where the retiree is at least 62 at separation with at least 20 years of creditable service. The break-even ignores COLA and the survivor annuity, both of which shorten it, and ignores the time value of the money paid, which lengthens it. Compute it, state it, and let the user decide.
+
+**When the deposit is not obviously worth making.** A regular military retiree whose retired pay exceeds the annuity increase the credit would buy, since that retired pay has to be waived. Anyone who will not remain long enough to retire under FERS at all, since the deposit comes back only through a refund that also surrenders the rest of the service.
+
+Source: 5 CFR 842.306, https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-842/subpart-C/section-842.306
 Source: 5 CFR 842.307, https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-842/subpart-C/section-842.307
+Source: 5 USC 8411, https://www.law.cornell.edu/uscode/text/5/8411
+Source: CSRS/FERS Handbook Chapter 22, https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c022.pdf
+Source: CSRS/FERS Handbook Chapter 23, https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c023.pdf
+Source: OPM BAL 17-101, https://www.opm.gov/retirement-center/publications-forms/benefits-administration-letters/2017/17-101.pdf
+Source: OPM Military Retired Pay, https://www.opm.gov/retirement-center/fers-information/military-retired-pay/
 Source: OPM Service Credit, https://www.opm.gov/retirement-center/fers-information/service-credit/
 
-**Part time proration.** The annuity is computed as if service were full time on the full time high-3, then multiplied by a proration factor equal to actual hours worked during all creditable FERS service divided by total full time hours available in the same period, rounded to the nearest percent. Full time hours are 2,080 per year before March 1, 1986 and 2,087 per year thereafter. Under FERS the factor applies to the entire annuity. Part time service counts as full calendar time for eligibility.
+### 7.3 Part time proration
+
+The annuity is computed as if service were full time on the full time high-3, then multiplied by a proration factor equal to actual hours worked during all creditable FERS service divided by total full time hours available in the same period, rounded to the nearest percent. Full time hours are 2,080 per year before March 1, 1986 and 2,087 per year thereafter. Under FERS the factor applies to the entire annuity. Part time service counts as full calendar time for eligibility.
 
 Source: CSRS/FERS Handbook Chapter 55, https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c055.pdf
 
@@ -668,3 +760,21 @@ The phase out rate and the full elimination points are not stated on IRS pages a
 80. [MyFederalRetirement, FERS High-3 Average Salary](https://www.myfederalretirement.com/fers-high-3-salary/)
 81. [MyFederalRetirement, FERS Postponed Retirement MRA+10 and MRA+20](https://www.myfederalretirement.com/fers-postponed-retirement-mra10-mra20/)
 82. [Congress.gov, H.R. 491, Equal COLA Act](https://www.congress.gov/bill/119th-congress/house-bill/491)
+83. [OPM, Guide to Processing Personnel Actions Chapter 6, Creditable Service for Leave Accrual](https://www.opm.gov/policy-data-oversight/data-analysis-documentation/personnel-documentation/servicecreditleave.pdf)
+84. [OPM, Federal Ball Park Estimator, Service Computation Date](https://www.opm.gov/retirement-services/calculators/federal-ball-park-estimator/SCDpop.html)
+85. [5 U.S.C. 6303, Annual Leave Accrual](https://www.law.cornell.edu/uscode/text/5/6303)
+86. [5 CFR 630.205, Credit for Uniformed Service in Leave Accrual](https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-630/subpart-B/section-630.205)
+87. [OPM CSRS/FERS Handbook Chapter 22, Creditable Military Service](https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c022.pdf)
+88. [OPM CSRS/FERS Handbook Chapter 23, Service Credit Payments for Post-1956 Military Service](https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c023.pdf)
+89. [5 U.S.C. 8411, FERS Creditable Service](https://www.law.cornell.edu/uscode/text/5/8411)
+90. [5 U.S.C. 8422(e), Military Service Deposits](https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title5-section8422&num=0&edition=prelim)
+91. [5 CFR 842.306, Military Service](https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-842/subpart-C/section-842.306)
+92. [5 CFR 842.504, Amount of Annuity Supplement](https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-842/subpart-E/section-842.504)
+93. [OPM, Military Retired Pay](https://www.opm.gov/retirement-center/fers-information/military-retired-pay/)
+94. [OPM BAL 17-101, Additional Guidance on Military Deposits](https://www.opm.gov/retirement-center/publications-forms/benefits-administration-letters/2017/17-101.pdf)
+95. [OPM BAL 26-301, Calendar Year 2026 Interest Rate](https://www.opm.gov/retirement-center/publications-forms/benefits-administration-letters/2026/26-301.pdf)
+96. [OPM Form RI 20-97, Estimated Earnings During Military Service](https://www.opm.gov/forms/pdf_fill/ri20-97.pdf)
+97. [OPM Form SF 3108, Application to Make Service Credit Payment, FERS](https://www.opm.gov/forms/pdf_fill/sf3108.pdf)
+98. [DFAS, Military Service Deposits](https://www.dfas.mil/civilianemployees/militaryservice/militaryservicedeposits/)
+99. [National Archives, Standard Form 180 and Military Service Records](https://www.archives.gov/veterans/military-service-records/standard-form-180)
+100. [CRS R40428, Credit for Military Service Under Civilian Federal Employee Retirement Systems](https://www.everycrsreport.com/reports/R40428.html)

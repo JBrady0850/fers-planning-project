@@ -98,7 +98,7 @@ Start with these six. They unlock the most and they are the hardest to reconstru
 3. **Your official Service Computation Date for retirement purposes**, in writing from your benefits office. Note that the SCD for leave and the SCD for retirement are frequently different numbers, and only the retirement one governs eligibility.
 4. **Your Social Security statement** from ssa.gov, plus a second estimate run with future earnings set to zero. The checklist explains why the second one is not optional.
 5. **Your most recent TSP quarterly statement.**
-6. **Twelve months of bank and credit card transaction exports**, in CSV format.
+6. **Twelve months of bank and credit card transaction exports**, in CSV format. An aggregator export from the Empower Personal Dashboard, Monarch or Quicken Simplifi can replace the stack, but only if every spending account is linked and the history actually reaches back twelve months. A newly linked account backfills one to three months and no more, so link early and pull the older months from each institution.
 
 You can begin the interview with only the first five. The transaction exports are needed before the first monthly report, not before the interview.
 

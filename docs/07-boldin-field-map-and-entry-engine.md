@@ -184,7 +184,8 @@ When a document lands in `01 Source Documents`, these are the fields it touches.
 
 | Document | Boldin fields it updates |
 |---|---|
-| SF 50, most recent and the one that sets the Service Computation Date | Date of birth, retirement age, and the creditable service that drives the annuity figure |
+| SF 50, most recent, plus the written retirement SCD confirmation. Block 31 of the SF 50 is the **leave** SCD and must not be used here | Date of birth, retirement age, and the creditable service that drives the annuity figure |
+| Military service deposit status letter, where there is military service | The creditable service behind the annuity figure, and a one time expense for the deposit itself if it is still unpaid |
 | Agency annuity estimate for a specific date | Pension monthly pre-tax income for entries 1 and 2, start date, survivor reduction |
 | FERS supplement computation, Block 4 | Supplement pension entry amount, start date, end age 62 |
 | Leave and earnings statement | Work annual salary, TSP contribution per pay period, agency match, FEHB premium at the employee rate for reference only |

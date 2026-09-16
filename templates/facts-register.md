@@ -74,6 +74,9 @@ Claude writes into it as each interview block is answered. It is the single sour
 | Redeposit required, amount and status | | | |
 | Military service periods, dates | | DD-214 | |
 | Military deposit amount, status, deadline | | | |
+| Military deposit Interest Accrual Date | | SF 3108A | |
+| Military retired pay, and the authority it was awarded under | | Retirement order or award letter | |
+| Military retired pay waiver required, yes or no | | | |
 | Part time service periods and tours | | | |
 | Part time proration factor | | derived | |
 | Any eligibility date moved by an unpaid deposit | | derived | |

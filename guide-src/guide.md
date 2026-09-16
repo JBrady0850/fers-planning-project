@@ -46,7 +46,7 @@ A folder structure, a project prompt, and a working method.
 
 **The Entry Sheet** is written for you whenever a Boldin input changes. It is a typed list: the screen, the field, the exact value with its unit, what that value replaces, and where it came from. You enter the rows and the next validation confirms they landed. You never have to work out which box a number goes in.
 
-**The rules reference** carries eighty two citations and, more importantly, an explicit list of ten things that could not be verified.
+**The rules reference** carries one hundred citations and, more importantly, an explicit list of ten things that could not be verified.
 
 ## 1.4 What it will not do
 
@@ -123,9 +123,20 @@ Read it once before you run the interview. You do not need to memorize any of it
 
 Your **Service Computation Date for retirement purposes** decides your eligibility dates and the years of service in your annuity formula.
 
-It is frequently not the same number as your **Service Computation Date for leave purposes**, which is the one printed on your leave and earnings statement. The leave SCD credits military service and certain other time toward your annual leave accrual rate. The retirement SCD credits only service that is creditable under FERS, which is a narrower set.
+You have more than one Service Computation Date, and they are different numbers computed under different rules. Four are standard.
 
-If the only SCD you have is the one on your leave and earnings statement, you do not yet know your retirement SCD. Request it in writing from your benefits office. Section 4.3 gives you the wording.
+| Date | What it governs |
+|---|---|
+| SCD Leave | Your annual leave accrual rate, 4, 6 or 8 hours a pay period |
+| **SCD Retirement** | **Your retirement eligibility and the years of service in your annuity** |
+| SCD RIF | Your retention standing in a reduction in force |
+| SCD TSP | Vesting in the agency automatic 1 percent contribution, and your maximum TSP loan |
+
+**Block 31 of your SF 50 is the leave SCD.** The retirement SCD is not printed on the SF 50 at all. It lives in your agency's personnel and payroll system, and the only way to get it is to ask the benefits office in writing. OPM says so in its own leave guidance: "the SCD-Leave is not used for retirement benefit calculations."
+
+The two dates diverge most often over military service. The leave SCD credits honorable active duty with no payment. The retirement SCD credits post-1956 military service only after you pay the deposit described in Section 2.7. Four years of active duty and no deposit means a leave SCD four years earlier than your retirement SCD, and every eligibility date you compute from it is four years early.
+
+If the only SCD you have is the one on your leave and earnings statement or in Block 31 of an SF 50, you do not yet know your retirement SCD. Request it in writing from your benefits office. Section 4.3 gives you the wording.
 
 Every annuity figure in your plan depends on that one date. Getting it from the wrong field is the single most common way a federal employee ends up planning toward a date they are not eligible for.
 
@@ -285,15 +296,46 @@ If you ever left federal service and took a refund of your retirement contributi
 
 Handbook Chapter 21 still says a FERS refund can never be redeposited. That text is superseded. Do not rely on it.
 
-### Military service
+### Military service, and buying it back
 
 - Pre-1957 military service is creditable with no deposit.
-- **Post-1956 military service requires a deposit to count for either eligibility or computation.**
-- The amount is generally **three percent of your military basic pay**, with variations of 3.25 percent for 1999 service and 3.40 percent for 2000 service, plus interest.
-- Interest begins on the second anniversary of your FERS coverage start date and compounds annually, with an effective interest free window of roughly three years from entry on duty.
-- **The deposit must be paid before you separate from federal service. OPM cannot accept it afterward.**
+- **Post-1956 military service requires a deposit to count for either eligibility or computation.** Under FERS this is all or nothing. There is no CSRS style Catch-62 and no partial credit.
+- The amount is **three percent of your military basic pay**, with variations of 3.25 percent for 1999 service and 3.40 percent for 2000 service, plus interest. If you have been quoted seven percent, that came from a CSRS source and it is wrong for you.
+- Interest begins on the second anniversary of your FERS coverage start date and compounds annually at a rate the Treasury sets each year, **4.250 percent for 2026**. No interest is charged at all if you finish paying before the end of the year after interest starts, which gives an effective interest free window of roughly three years from your FERS coverage start date.
+- The deposit is paid **to your employing agency**, not to OPM.
+- **It must be paid in full before you separate from federal service. OPM cannot accept it afterward.**
 
 That deadline is absolute and it is the reason the military deposit question appears in Block 2 of the interview rather than later. If you have four years of active duty and a high-3 of $110,000, that service is worth roughly $4,400 a year in annuity for life. A deposit of a few thousand dollars pays back in well under two years. People miss it because nobody told them there was a clock.
+
+**What counts as military service.** Active duty, honorably terminated. Service at West Point, Annapolis, the Air Force Academy and the Coast Guard Academy became creditable under the 2008 National Defense Authorization Act. Merchant Marine Academy service does not count. Reserve **active duty for training**, meaning the annual camp or cruise, counts. Weekly and monthly **drill** does not. National Guard service counts only when federalized.
+
+**The four documents, in order.**
+
+| Step | What | Where it goes |
+|---|---|---|
+| 1 | DD Form 214, Certificate of Release or Discharge from Active Duty | You keep it. If you do not have one, request it from the National Personnel Records Center through eVetRecs or Standard Form 180, or through milConnect |
+| 2 | RI 20-97, Estimated Earnings During Military Service | The finance center of the branch you served in, one form per branch. Allow about 60 business days |
+| 3 | SF 3108, Application to Make Service Credit Payment, FERS | Your agency benefits office |
+| 4 | SF 3108A, the military supplement to SF 3108 | Your agency benefits office. This is the form that records your Interest Accrual Date |
+
+Then you pay, by lump sum or by payroll deduction, and you receive a paid in full letter and a corrected retirement SCD. **Keep both.** The whole sequence commonly takes about six months and interest compounds the entire time, so waiting another year has a price you can calculate.
+
+**If you receive military retired pay, read this twice.** Regular military retired pay has to be **waived** before the same service can count toward your FERS annuity. Two kinds do not have to be waived: reserve retired pay under chapter 1223 of title 10, the kind generally payable at 60, and retired pay awarded for a service connected disability incurred in combat with an enemy or caused by an instrumentality of war and incurred in line of duty during a period of war. Your retirement order is the document that settles which kind you have.
+
+Where a waiver is required this is a trade, not a bonus. Put the retired pay you would give up next to the annuity increase you would gain, and only then decide. The waiver goes to **DFAS, not to OPM**, at least 90 days and no later than 60 days before your annuity starts, and **it must say on its face that you are waiving the retired pay for civil service retirement purposes**, or OPM cannot allow the credit. Waiving does not replace the deposit. You still pay it.
+
+VA disability compensation is not military retired pay. You do not give up VA benefits to get this credit.
+
+**What the deposit buys, and what it does not.** It buys years of creditable service, for eligibility and for the computation, including progress toward the 20 years the 1.1 percent multiplier needs. It does **not** raise your high-3, which averages civilian rates of basic pay only. It does **not** raise your FERS supplement, whose numerator excludes military service even when the deposit is paid. That last one catches almost everybody.
+
+**Working out whether it is worth it.**
+
+```
+Annual annuity increase = years bought x multiplier x high-3
+Break-even in years     = deposit cost including interest / annual annuity increase
+```
+
+The multiplier is 1.0 percent, or 1.1 percent if you separate at 62 or later with at least 20 years. The break-even ignores COLA and the survivor annuity, which both shorten it, and ignores what the money would have earned elsewhere, which lengthens it.
 
 ### Part time service
 
@@ -889,7 +931,14 @@ Twelve months of real transactions. Not a budget. Not a recollection. Not last m
 
 **List every account you spend from and export each one.** Checking, savings, every credit card, and any account a bill autopays from.
 
-**If you use an aggregator such as Empower or Monarch**, one export can replace the stack. But verify it sees everything: an aggregator only knows about accounts linked to it, and a missing account produces an expense base that is quietly too low. Too low is the direction that makes a plan look solvent when it is not.
+**If you use an aggregator, one export can replace the stack.** The **Empower Personal Dashboard**, which is what Personal Capital became, is free and exports transactions to CSV from the Transactions screen. **Monarch** and **Quicken Simplifi** do the same and are paid. Whichever you use, four things will bite you:
+
+1. **An aggregator only knows about accounts linked to it.** A missing account produces an expense base that is quietly too low, and too low is the direction that makes a plan look solvent when it is not. Walk your account list against the linked list before you trust the export.
+2. **The export obeys the filter on screen.** Empower's Transactions view defaults to the last 90 days. Widen the date range and set the account filter deliberately before you press the CSV button, or you will export a quarter and think it is a year.
+3. **Linking today does not give you a year of history.** When an account is first linked, an aggregator typically backfills only one to three months, sometimes up to a year depending on the institution, and there is no way to import older records by hand. If you are not already running one, link your accounts now and pull the older months from each bank and card directly. This is the reason to do it early rather than in the month you need the report.
+4. **Transfers are not spending.** Empower's built in Cash Flow view already excludes transfers, credit card payments, loan payments and retirement contributions so it does not double count. A burn rate summed from the raw CSV does not exclude them unless you do it yourself, and a credit card payment counted alongside the charges it paid will inflate your expense base badly.
+
+Cash spending never appears in any of them, because they only ever see linked accounts. Estimate it separately and say that you estimated it.
 
 **Do not forget the bills that do not appear monthly.** Property tax, insurance premiums paid semiannually, annual subscriptions, vehicle registration. A semiannual bill shows up in roughly half the months and gets misread as an anomaly in both directions.
 
@@ -1939,7 +1988,7 @@ The system produces the arithmetic for every one of these. It does not make the 
 
 **RMD.** Required minimum distribution. Age 75 for anyone born 1960 or later, 73 for 1951 through 1958.
 
-**SCD.** Service Computation Date. **The retirement SCD and the leave SCD are frequently different numbers, and only the retirement one governs eligibility and the annuity.**
+**SCD.** Service Computation Date. You have four: leave, retirement, reduction in force, and TSP. **The retirement SCD and the leave SCD are frequently different numbers, and only the retirement one governs eligibility and the annuity.** Block 31 of the SF 50 is the leave SCD. The retirement SCD is not on the SF 50 at all.
 
 **SF 50.** Notification of Personnel Action. Documents every appointment, promotion and separation in your career.
 
@@ -1976,6 +2025,7 @@ The system produces the arithmetic for every one of these. It does not make the 
 | FEHB annuitant premium tables | opm.gov plan information | Immediate |
 | Medicare premium and IRMAA tables | cms.gov | Immediate |
 | Transaction exports | Each bank and card portal | Under an hour, all accounts |
+| Aggregated transaction export | Empower Personal Dashboard, free, or Monarch or Quicken Simplifi, paid. Set the date range before exporting | Minutes, once accounts are linked and backfilled |
 | Loan statements | Each lender | Immediate |
 | Tax returns | Tax preparer, or IRS transcript | Immediate to weeks |
 | Beneficiary designations | Agency benefits office and tsp.gov | Days |
@@ -1994,7 +2044,8 @@ Bold rows are the ones that come from a person rather than a portal. Send those 
 | FERS multiplier | 1.0 percent, or 1.1 percent at 62 with 20 years |
 | MRA+10 reduction | 5/12 of 1 percent per month under 62, permanent |
 | Sick leave conversion | 2,087 hours per year on a 360 day year: about 174 hours per month, about 5.8 hours per day |
-| Military deposit | Generally 3 percent of military basic pay, plus interest |
+| Military deposit | 3 percent of military basic pay, 3.25 percent for 1999 and 3.40 percent for 2000, plus interest |
+| Service credit deposit interest rate | 4.250 percent for calendar year 2026, set annually by the Treasury |
 | Annual leave ceiling | 240 hours most employees, 360 overseas, 720 SES |
 | Survivor election | 50 percent survivor at a 10 percent reduction, or 25 percent at 5 percent |
 
@@ -2076,7 +2127,7 @@ Re-verify. OPM’s calculator page and its program information page have carried
 
 ## D.1 Where the rules came from
 
-`docs/06-fers-rules-reference.md` carries **82 citations** across 22 rule sections. Primary sources, in descending order of authority: the United States Code, the Code of Federal Regulations via eCFR, the Federal Register, OPM Benefits Administration Letters, the OPM CSRS/FERS Handbook, and the program pages of opm.gov, tsp.gov, ssa.gov, cms.gov and irs.gov.
+`docs/06-fers-rules-reference.md` carries **100 citations** across 22 rule sections. Primary sources, in descending order of authority: the United States Code, the Code of Federal Regulations via eCFR, the Federal Register, OPM Benefits Administration Letters, the OPM CSRS/FERS Handbook, and the program pages of opm.gov, tsp.gov, ssa.gov, cms.gov and irs.gov.
 
 Secondary sources such as FEDweek, Government Executive, FedSmith, NARFE and MyFederalRetirement were used for corroboration and for identifying what changed. Where a secondary source is the only support for a statement, the reference file says so.
 
@@ -2151,6 +2202,32 @@ The master prompt changed with it. Phase A creates and seeds the new folder, an 
 **One correction.** Two cross references in version 1.0.0 pointed at a Section 5.3 that does not exist. Both now point at Section 4.3, the three requests to send your benefits office.
 
 **One known gap.** The field labels inside Boldin's add and edit dialogs come from Boldin's help articles rather than from the live form. Section 9.4 says so, and the field map carries a corrections table for anything you find that differs.
+
+## 1.2.0, 16 September 2026
+
+**Service Computation Dates and the military service deposit are now covered properly, and both were validated to the same three source standard as the 1.1.1 pass.** The rules reference grew from 82 citations to 100.
+
+**Section 2.1 was rewritten.** Earlier versions said only that the retirement SCD and the leave SCD are frequently different. They are different in a specific and checkable way, and the guide now says which four SCDs exist, which one governs, and the fact that settles it: **Block 31 of the SF 50 is the leave SCD, and the retirement SCD is not printed on the SF 50 at all.** OPM states in its own leave accrual guidance that the leave SCD is not used for retirement benefit calculations.
+
+**Section 2.7 gained a full treatment of the buy back**, because the earlier five bullets priced the deposit without telling anyone how to actually pay it. New material: what counts as military service, including academy service creditable since the 2008 National Defense Authorization Act, reserve active duty for training counting while drill does not, and National Guard service counting only when federalized; the four documents in order, being the DD-214, RI 20-97, SF 3108 and SF 3108A, with where each one goes and how long it takes; the fact that the deposit is paid to the employing agency rather than to OPM; the 2026 interest rate of 4.250 percent and the mechanism that sets it; and the break-even formula.
+
+**The military retired pay waiver is new and it is the largest gap this version closes.** Regular military retired pay must be waived before the same service can count toward a FERS annuity. Reserve retired pay under chapter 1223 of title 10 is not waived, and neither is retired pay awarded for a disability incurred in combat or caused by an instrumentality of war. The waiver goes to DFAS rather than OPM, is filed 60 to 90 days before the annuity starts, and must state on its face that it is for civil service retirement purposes. A waiver does not replace the deposit. Nothing in versions 1.0.0 through 1.1.1 said any of this, and a military retiree following the earlier text could have paid a deposit that bought nothing.
+
+**Three things the deposit does not buy** are now stated where a reader will hit them: it does not raise the high-3, which averages civilian pay only; it does not raise the FERS supplement, whose numerator excludes military service even when the deposit is paid; and it cannot be withdrawn on its own, with no right to pay it again once refunded.
+
+**Section 4.6 on aggregators was corrected.** The guidance to use Empower or Monarch was accurate but incomplete in a way that would have produced wrong burn rates. Empower Personal Dashboard is free and does export transactions to CSV, but the export obeys the on screen filter and defaults to 90 days, a newly linked account backfills only one to three months with no manual import, and transfers and credit card payments are excluded from the built in Cash Flow view but not from the raw CSV. All four caveats are now in the text, along with the instruction to link accounts early rather than in the month the report is due.
+
+| Section | Added or corrected |
+|---|---|
+| 2.1 | The four SCDs, Block 31 being the leave SCD, and the military service divergence |
+| 2.7 | Buy back workflow, forms, interest mechanics, the retired pay waiver, what the deposit does not buy, break-even |
+| 4.6 | Empower and Monarch caveats, the backfill limit, the transfer exclusion, cash spending |
+| Appendix A | SCD glossary entry expanded |
+| Appendix B | Aggregated export row |
+| Appendix C | Deposit rate variations and the 2026 interest rate |
+| Appendix D | Citation count 82 to 100 |
+
+The package changed with it. The master prompt now asks in Block 2 what authority any military retired pay was awarded under and requires the break-even to be computed; the intake checklist gained the RI 20-97, SF 3108, SF 3108A, paid in full letter and retirement order rows; the Facts Register gained the Interest Accrual Date and waiver rows; and Open Items gained a ninth standing question on the retired pay authority.
 
 ## 1.1.1, 16 September 2026
 

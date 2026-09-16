@@ -21,11 +21,16 @@ Every document below feeds specific Boldin fields. Part 3 of `docs/07-boldin-fie
 | Agency retirement annuity estimate, run for each candidate separation date | Agency benefits portal, or request from the benefits officer in writing | The reference figure your independent computation is checked against | `Annuity Estimate YYYY-MM-DD Sep YYYY-MM-DD.pdf` |
 | SF 50 for every appointment in your federal career | eOPF, Personnel Actions | Establishes every appointment type, every break, and whether retirement deductions were withheld in each period | `SF50 YYYY-MM-DD [action].pdf` |
 | Salary history for the last four years at minimum | eOPF SF 50s, or payroll records | The high-3 is time weighted across three consecutive years, so effective dates matter as much as amounts | `Salary History Basic Pay.xlsx` |
-| DD-214 for every period of military service | Your records, or milConnect | Post-1956 military service counts only if a deposit is paid, and only before separation | `DD214 [branch] YYYY.pdf` |
+| DD-214 for every period of military service | Your records, milConnect, or the National Personnel Records Center through eVetRecs or Standard Form 180 | Post-1956 military service counts only if a deposit is paid, and only before separation | `DD214 [branch] YYYY.pdf` |
 | Military service deposit status letter | Agency benefits office or payroll provider | Tells you whether the deposit is paid, in progress, or never started, and the current balance with interest | `Military Deposit Status YYYY-MM-DD.pdf` |
+| Estimated earnings statement from the branch of service, if the deposit is not already paid | Request it with form RI 20-97, one per branch served, addresses on the back of the form. Allow about 60 business days | The deposit is 3 percent of military basic pay, so this statement is the only thing that prices it | `RI20-97 Estimated Earnings [branch] YYYY.pdf` |
+| SF 3108 and SF 3108A, if a deposit application has been filed | Your copy, or the agency benefits office | SF 3108A carries the Interest Accrual Date, which is what determines the interest you owe | `SF3108 Military Deposit YYYY.pdf` |
+| Military deposit paid in full letter, and the corrected retirement SCD that follows it | Agency benefits office or payroll provider | A deposit is not proven paid until this letter exists. Keep both documents together | `Military Deposit Paid In Full YYYY-MM-DD.pdf` |
 | Refund or redeposit records, if you ever took a refund of retirement contributions | Agency benefits office, OPM | Refunded FERS service counts for eligibility but not for computation unless redeposited | `FERS Refund Record YYYY.pdf` |
 
-**Note on the Service Computation Date.** If the only SCD you can find is on your leave and earnings statement, that is almost certainly the leave SCD, which credits military service and certain other time that the retirement SCD may not. Request the retirement SCD from your benefits office in writing and file the reply here. Every annuity figure in your plan depends on it.
+**Note on the Service Computation Date.** If the only SCD you can find is on your leave and earnings statement or in Block 31 of an SF 50, that is the leave SCD. The retirement SCD is not printed on the SF 50 at all. The leave SCD credits military service and certain other time that the retirement SCD does not credit until a deposit is paid. Request the retirement SCD from your benefits office in writing and file the reply here. Every annuity figure in your plan depends on it.
+
+**Note on military service.** If you served after 1956 and have never paid the deposit, that service is currently worth nothing toward your FERS retirement, for eligibility or for the computation. Three documents close the gap, in this order: the DD-214 proves the service, the RI 20-97 estimated earnings statement prices it, and the SF 3108 with SF 3108A applies to pay it. The deposit must be paid in full before you separate, and the whole sequence commonly takes six months, so start it the day you find it open.
 
 ---
 
@@ -82,7 +87,7 @@ This tier is the one people skip, and skipping it is what makes retirement plans
 |---|---|---|---|
 | Twelve months of checking account transactions | Bank portal, export to CSV | The core of the expense base | `Bank Transactions YYYY-MM to YYYY-MM.csv` |
 | Twelve months of transactions from every credit card | Each card portal, export to CSV | Cards carry the discretionary spending that memory understates | `[Card] Transactions YYYY-MM to YYYY-MM.csv` |
-| Twelve month aggregated export, if you use Empower, Monarch or similar | The aggregator's transactions view, export to CSV | Replaces a stack of individual downloads | `Aggregator Transactions YYYY-MM to YYYY-MM.csv` |
+| Twelve month aggregated export, if you use an aggregator | Empower Personal Dashboard, free, or Monarch or Quicken Simplifi, paid. Transactions view, widen the date range, then export to CSV | Replaces a stack of individual downloads. Four cautions: the export obeys the on screen filter and defaults to 90 days; a newly linked account backfills only one to three months and cannot be backfilled by hand; transfers and credit card payments are excluded from the built in cash flow view but not from the raw CSV; cash spending never appears at all | `Aggregator Export YYYY-MM to YYYY-MM.csv` |
 | Current mortgage statement or lease | Lender or landlord | Confirmed housing cost, and the payoff or renewal date | `Housing Mortgage Statement.pdf` or `Lease Agreement.pdf` |
 | Every loan statement: auto, personal, student, home equity | Each lender | Balance, rate, payment, and the real payoff date | `[Lender] Loan Statement YYYY-MM.pdf` |
 | Insurance policies: auto, home or renters, umbrella, life, long term care | Each carrier | Premiums, and which ones end at retirement | `[Carrier] [Type] Policy YYYY.pdf` |
@@ -139,6 +144,7 @@ Export CSV, not PDF, wherever the option exists. CSV can be categorized automati
 | VA disability rating decision and current compensation amount | va.gov | Tax free income with its own cost of living adjustment history. Model it as a separate line from the FERS annuity. | `VA Rating Decision YYYY-MM-DD.pdf` |
 | VA health care enrollment and priority group | va.gov | Affects the pre-65 health care analysis and long term care planning | `VA Health Enrollment YYYY.pdf` |
 | Military retired pay statement, if receiving it | myPay | Interacts with the military service deposit decision | `Military Retired Pay YYYY.pdf` |
+| **Retirement order or award letter showing the authority for the retired pay** | Your records, or your branch of service | This is the document that decides whether you must waive the retired pay to get FERS credit. Reserve retired pay under chapter 1223 of title 10 is not waived, and neither is retired pay for a combat incurred or instrumentality of war disability. Regular retired pay is. | `Military Retirement Order [branch] YYYY.pdf` |
 
 ---
 

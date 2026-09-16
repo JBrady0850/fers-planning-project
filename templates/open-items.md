@@ -25,8 +25,9 @@ Every unanswered question, each with the document that would close it and an est
 | 6 | On what dates did my FEGLI Basic and each Option begin? | FEGLI enrollment history, SF 2817 | Agency benefits office or eOPF | Same five year test, applied separately to Basic and each Option, and OPM cannot waive it. | 2026-09-13 |
 | 7 | What does my Social Security benefit look like with future earnings set to zero? | SSA estimate run at $0 future earnings | ssa.gov, my Social Security Retirement Calculator | Feeds both the Social Security line and the FERS supplement computation. The statement figure overstates both. | 2026-09-13 |
 | 8 | What is the current OPM retirement application processing timeline my agency expects? | Written answer from the benefits office | Agency benefits office | Sizes the cash bridge. Interim payments during adjudication are a fraction of the final annuity. | 2026-09-13 |
+| 9 | If I receive or will receive military retired pay, under what authority was it awarded, and must I waive it to get FERS credit for the same service? | Retirement order or award letter, plus a written answer from the benefits office | Branch of service, and the agency benefits office | Regular retired pay must be waived. Reserve retired pay under chapter 1223 of title 10 is not, and neither is retired pay for a combat incurred or instrumentality of war disability. Waiving can be a net loss, and the waiver goes to DFAS 60 to 90 days before the annuity starts. | 2026-09-16 |
 
-Items 1 through 8 are the standing opening set. Add to them as the interview surfaces gaps.
+Items 1 through 9 are the standing opening set. Item 9 applies only where there is military retired pay. Add to them as the interview surfaces gaps.
 
 ---
 

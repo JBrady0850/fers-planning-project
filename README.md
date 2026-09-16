@@ -114,11 +114,11 @@ fers-planning-project/
 │   ├── 03-document-intake-checklist.md   Ten tiers, six marked minimum viable start
 │   ├── 04-report-catalog.md              Seventeen artifacts with methods
 │   ├── 05-boldin-setup-and-validation.md Entry map, validation loop, fifteen defect classes
-│   ├── 06-fers-rules-reference.md        Twenty two rule sections, 82 citations
+│   ├── 06-fers-rules-reference.md        Twenty two rule sections, 100 citations
 │   ├── 07-boldin-field-map-and-entry-engine.md
 │   │                                     Boldin screen by screen, and the Entry Sheet spec
 │   └── FERS-Planning-Project-User-Guide.pdf
-│                                          72 page user guide
+│                                          79 page user guide
 ├── guide-src/                             Source the user guide is built from
 │   ├── guide.md
 │   ├── template.html
@@ -126,7 +126,7 @@ fers-planning-project/
 │   └── build.py
 ├── templates/
 │   ├── facts-register.md                 The single source of truth for every number
-│   ├── open-items.md                     Seeded with the eight questions to ask on day one
+│   ├── open-items.md                     Seeded with the nine questions to ask on day one
 │   └── boldin-entry-sheet.md             One row per Boldin field, what to type and what it replaces
 └── scripts/
     ├── New-FersWorkspace.ps1
@@ -210,7 +210,7 @@ It produces the arithmetic. You take the arithmetic to your agency benefits offi
 
 ## Sourcing and known gaps
 
-[`docs/06-fers-rules-reference.md`](docs/06-fers-rules-reference.md) carries 82 citations across 22 rule sections, drawn from opm.gov, tsp.gov, ssa.gov, cms.gov, irs.gov, eCFR, the US Code, and congressional sources. Rules verified September 2026.
+[`docs/06-fers-rules-reference.md`](docs/06-fers-rules-reference.md) carries 100 citations across 22 rule sections, drawn from opm.gov, tsp.gov, ssa.gov, cms.gov, irs.gov, eCFR, the US Code, and congressional sources. Rules verified September 2026.
 
 It also names **ten items that could not be verified or where sources conflict**, rather than papering over them. Among them:
 

@@ -4,6 +4,48 @@ All notable changes to this project are recorded here.
 
 Rules in this repository were verified in September 2026. Dollar figures are 2026 program year values and change annually. See `docs/06-fers-rules-reference.md` for citations and for the list of items that could not be verified.
 
+## [1.2.0] - 2026-09-16
+
+Service Computation Dates and the military service credit deposit are now covered properly, and the expense aggregator guidance was corrected. Every new claim was validated at the same standard as 1.1.1: three independent authoritative sources per claim, none accepted from a page that was not fetched. The rules reference grew from 82 citations to 100.
+
+### Added, Service Computation Dates
+
+- **`docs/06-fers-rules-reference.md` section 7.1** names the four standard SCDs, leave, retirement, reduction in force and TSP, and states which one governs.
+- **Block 31 of the SF 50 carries the leave SCD. The retirement SCD is not printed on the SF 50 at all.** Earlier versions said only that the two are "frequently different," which is true but gave a reader no way to tell which one they were holding. OPM's leave accrual guidance states directly that the leave SCD is not used for retirement benefit calculations.
+- The mechanism of divergence is now named: the leave SCD credits honorable active duty with no payment, the retirement SCD credits post-1956 military service only after a deposit, so four years of uncredited active duty makes every eligibility date read four years early.
+- The 5 USC 6303 restriction on leave accrual credit for retired uniformed service members is recorded, with a note that it governs the leave SCD only.
+
+### Added, the military service credit deposit
+
+- **`docs/06-fers-rules-reference.md` section 7.2** replaces a five line summary with the full rule: what counts as military service, the amount, the interest mechanics, where and by when it is paid, the forms, the retired pay waiver, what the deposit does not buy, and the break-even.
+- **What counts.** Academy service at West Point, Annapolis, the Air Force Academy and the Coast Guard Academy, creditable since the 2008 National Defense Authorization Act, with the Merchant Marine Academy excluded. Reserve active duty for training counts; drill does not. National Guard service counts only when federalized.
+- **Interest.** It begins on the second anniversary of the FERS coverage start date and compounds annually at a rate the Treasury sets each year, 4.250 percent for 2026 per OPM BAL 26-301. Individual accounts are charged a composite rate around the Interest Accrual Date recorded on the SF 3108A.
+- **The deposit is paid to the employing agency, not to OPM**, and must be paid in full before the separation on which the retirement is based.
+- **The forms, in order:** DD Form 214, then RI 20-97 to price the service, then SF 3108 with SF 3108A to apply. Standard Form 180 and eVetRecs are the route to a missing DD-214. An official estimated earnings statement takes about 60 business days and the whole sequence commonly runs about six months.
+- **The military retired pay waiver, which nothing in 1.0.0 through 1.1.1 mentioned.** Regular military retired pay must be waived under 5 USC 8411(c)(2) before the same service can count toward a FERS annuity. Reserve retired pay under chapter 1223 of title 10 is not waived, and neither is retired pay awarded for a service connected disability incurred in combat with an enemy or caused by an instrumentality of war and incurred in line of duty during a period of war. The waiver goes to DFAS rather than OPM, 60 to 90 days before the annuity commencing date, and must state on its face that it is for civil service retirement purposes. **A waiver does not replace the deposit.** A military retiree following the earlier text could have paid a deposit that bought nothing.
+- **Three limits on what the deposit buys** are now stated plainly: it does not raise the high-3, which averages civilian rates of basic pay only; it does not raise the FERS Special Retirement Supplement, whose numerator excludes military service even when the deposit is paid; and it is refundable only inside a full refund of FERS deductions, after which a FERS employee has no right to pay it again.
+- **A break-even formula**, so the deposit decision is a number rather than an intuition.
+
+### Fixed, expense aggregators and burn rate
+
+The advice to use an aggregator such as Empower or Monarch was accurate but incomplete in ways that produce a wrong burn rate. Verified against the vendor's own documentation and corrected in `MASTER-PROMPT.md` Block 9, `docs/03-document-intake-checklist.md`, `docs/02-setup-instructions.md` and guide section 4.6:
+
+- The product is the **Empower Personal Dashboard**, the former Personal Capital. It is free and it does export transactions to CSV.
+- **The export obeys the filter on screen and defaults to the last 90 days.** A user who presses the button without widening the date range exports a quarter and files it as a year.
+- **A newly linked account backfills only one to three months**, sometimes up to a year depending on the institution, and there is no manual import. The package asks for twelve months, so accounts must be linked early and the older months pulled from each institution directly.
+- **Transfers, credit card payments, loan payments and retirement contributions are excluded from the built in Cash Flow view to avoid double counting, but they are present in the raw CSV.** A burn rate summed from the raw export without replicating that exclusion counts a credit card payment alongside the charges it paid.
+- Cash spending never appears, because an aggregator only ever sees linked accounts.
+- Monarch and Quicken Simplifi also export CSV and are paid rather than free.
+
+### Changed
+
+- `MASTER-PROMPT.md` Block 1 question 2 now names Block 31 as the leave SCD. Block 2 question 4 asks the branch, the Interest Accrual Date, whether the service was academy, reserve active duty for training or federalized Guard duty, and **under what authority any military retired pay was awarded**. The analyst instruction now requires the break-even and a waiver determination.
+- `docs/03-document-intake-checklist.md` gained the RI 20-97 estimated earnings statement, SF 3108 and SF 3108A, the paid in full letter with the corrected retirement SCD, and the military retirement order, plus a note on military service.
+- `templates/facts-register.md` gained rows for the Interest Accrual Date, the retired pay authority and whether a waiver is required.
+- `templates/open-items.md` gained a ninth standing question on the retired pay authority.
+- `docs/07-boldin-field-map-and-entry-engine.md` no longer implies the SF 50 carries the retirement SCD, and the reverse map gained the military deposit status letter.
+- The guide is rebuilt at 79 pages. Parts 1 and 2 still begin on their 1.0.0 pages.
+
 ## [1.1.1] - 2026-09-16
 
 Every externally checkable claim in the guide and the rules reference was validated against primary sources, at a standard of three independent authoritative sources per claim, drawn from OPM, the Code of Federal Regulations, the US Code, SSA, CMS, IRS, TSP, the Federal Register and congressional sources. Twenty two items were corrected. No claim failed for want of sources.

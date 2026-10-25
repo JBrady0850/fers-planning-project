@@ -235,8 +235,8 @@ Use the user's own zero future earnings estimate at 62 for the first term, not t
 **Three properties that must appear in every report that contains a supplement line:**
 
 - **It receives no cost of living adjustment.** It is fixed in nominal dollars for its entire run. A tool that inflates it is wrong.
-- **It ends at the end of the month the user turns 62**, regardless of Social Security.
-- **It is subject to an earnings test.** Earnings above the annual exempt amount reduce it by one dollar for every two dollars over. The 2026 exempt amount is $24,480. The reduction is applied in the year after the earnings were made, in practice beginning with the July payment. Wages and net self employment income count. The FERS annuity itself, TSP withdrawals, interest, dividends, capital gains and rental income do not count.
+- **It ends at the end of the month the user turns 62**, regardless of Social Security, or a month sooner for a 62nd birthday on the 1st or 2nd of a month (Handbook Chapter 51, section 51A1.1-3 E).
+- **It is subject to an earnings test.** Earnings above the annual exempt amount reduce it by one dollar for every two dollars over. The 2026 exempt amount is $24,480. The reduction is applied in the year after the earnings were made, in practice beginning with the July payment. Only earnings in months the supplement is paid count, so pay before retirement does not, and each year's reduction is capped at the supplement paid that year (5 U.S.C. 8421a). Wages and net self employment income count. The FERS annuity itself, TSP withdrawals, interest, dividends, capital gains and rental income do not count.
 
 **If the user plans to work after retiring, model the supplement net of the earnings test and show both figures.** A post retirement job at forty thousand dollars a year erases most of a typical supplement.
 
@@ -381,9 +381,11 @@ This block carries more permanent consequences than any other except Block 1.
 
 | Election | Survivor receives | Retiree's annuity reduced by |
 |---|---|---|
-| Full | 50 percent of the unreduced annuity | 10 percent |
-| Partial | 25 percent of the unreduced annuity | 5 percent |
+| Full | 50 percent of the base annuity | 10 percent of the base |
+| Partial | 25 percent of the base annuity | 5 percent of the base |
 | None | Nothing | Nothing |
+
+The base is the annuity before the survivor reduction. Where an age reduction applies, as on an MRA+10 annuity, the base is the annuity after the age reduction, per CSRS/FERS Handbook Chapter 50 section 50B3.1-3D.4.
 
 Spousal consent is required to elect anything less than the maximum, including the partial election and no election at all.
 
@@ -498,11 +500,11 @@ Full citations are in `docs/06-fers-rules-reference.md`. Re verify any rule at o
 
 | Path | Requirement | Reduced? | Supplement? |
 |---|---|---|---|
-| Age 62 | 62 with 5 years | No | No, age 62 ends it |
+| Age 62 | 62 with 5 years of civilian service | No | No, age 62 ends it |
 | Age 60 | 60 with 20 years | No | Yes |
 | MRA + 30 | MRA with 30 years | No | Yes |
 | MRA + 10 | MRA with 10 to 29 years | Yes, 5/12 of 1 percent per month under 62, permanent | **No** |
-| Deferred | Separate before MRA, claim at 62 with 5 years or MRA with 10 years | Reduced if before 62 | **No** |
+| Deferred | Separate before MRA; starts at 62 with 5 years, at MRA with 10, at 60 with 20, or at MRA with 30 | Reduced only when it starts under 62 with 10 to 19 years, or under 60 with 20 to 29 | **No** |
 | VERA early out | 50 with 20 years, or any age with 25 years, agency authority required | **No FERS age reduction** | Yes, but not until MRA |
 
 **Computation.** Multiplier of 1.0 percent, or 1.1 percent only at age 62 or older with at least 20 years at separation. Applied to the high-3 average salary and years and months of creditable service, then adjusted for sick leave credit, part time proration, the age reduction if any, and the survivor election if any.

@@ -8,6 +8,27 @@ You get a project prompt, a fourteen block interview, a document intake checklis
 >
 > This is not financial, legal, or tax advice. It is not affiliated with, endorsed by, or connected to the Office of Personnel Management, the Thrift Savings Plan, the Social Security Administration, Boldin, Anthropic, or any federal agency. It produces arithmetic and decision options from your own documents. Every irreversible election listed below must be confirmed with your agency benefits officer and a licensed fiduciary before you file anything. See [DISCLAIMER.md](DISCLAIMER.md).
 
+
+---
+
+## The planner app: no setup, nothing to install
+
+**https://jbrady0850.github.io/fers-planning-project/**
+
+<img src="app/icons/open-app-qr.png" alt="QR code that opens the planner" width="140">
+
+A free web app that runs the core of this method in your browser. Answer ten short steps and it derives your four eligibility dates, prices the annuity with every step of the arithmetic shown, tests the FERS Supplement and its earnings test, converts your sick leave on OPM's own chart, tests the FEHB and FEGLI five year rules at every candidate date, prices the survivor election, lines up income against spending, and writes the exact values to type into Boldin. **Save the whole plan as a Word file or a PDF**, built in the browser.
+
+There is no account, no sign-in and no tracking. Your answers stay in the browser on your own device. It opens from a downloaded copy too: download the ZIP, open the `app` folder, and double-click `index.html`.
+
+| Today on a phone | The dates the rules give you |
+| --- | --- |
+| ![The verdict and open items on a phone](docs/images/planner-start-phone.png) | ![The eligibility dates on a phone](docs/images/planner-dates-phone.png) |
+
+![Every candidate date side by side](docs/images/planner-annuity-desktop.png)
+
+The app covers Regular FERS voluntary retirement. It stops, and says why, for special provision coverage. It works from what you type; the Claude project below works from your documents and checks them. Use the app to see where you stand in twenty minutes, and the project to prove it. Full description, scope and method: [`docs/08-planner-app.md`](docs/08-planner-app.md). The screenshots use the invented worked example from Part 10 of the user guide.
+
 ---
 
 ## Why this exists
@@ -114,9 +135,11 @@ fers-planning-project/
 │   ├── 03-document-intake-checklist.md   Ten tiers, six marked minimum viable start
 │   ├── 04-report-catalog.md              Seventeen artifacts with methods
 │   ├── 05-boldin-setup-and-validation.md Entry map, validation loop, fifteen defect classes
-│   ├── 06-fers-rules-reference.md        Twenty two rule sections, 100 citations
+│   ├── 06-fers-rules-reference.md        Twenty two rule sections, 103 citations
 │   ├── 07-boldin-field-map-and-entry-engine.md
 │   │                                     Boldin screen by screen, and the Entry Sheet spec
+│   ├── 08-planner-app.md                 The browser planner: scope, method, files, testing
+│   ├── images/                           Planner screenshots
 │   └── FERS-Planning-Project-User-Guide.pdf
 │                                          79 page user guide
 ├── guide-src/                             Source the user guide is built from
@@ -128,9 +151,22 @@ fers-planning-project/
 │   ├── facts-register.md                 The single source of truth for every number
 │   ├── open-items.md                     Seeded with the nine questions to ask on day one
 │   └── boldin-entry-sheet.md             One row per Boldin field, what to type and what it replaces
-└── scripts/
-    ├── New-FersWorkspace.ps1
-    └── new-fers-workspace.sh
+├── scripts/
+│   ├── New-FersWorkspace.ps1
+│   └── new-fers-workspace.sh
+├── app/                                   The browser planner, published to GitHub Pages
+│   ├── index.html
+│   ├── js/rules.js                        Every 2026 figure with its source, updated yearly
+│   ├── js/engine.js                       The calculations
+│   ├── js/plan.js                         The plan model the tabs, Word file and PDF share
+│   ├── js/export.js                       Word, PDF and Markdown output
+│   └── vendor/                            docx and pdfmake, MIT licensed
+├── tests/
+│   ├── engine.test.mjs                    Against OPM's own examples and Part 10 of the guide
+│   ├── ui_smoke.py                        Every tab and every file, four screen sizes
+│   ├── make_screenshots.py
+│   └── make_icons.py
+└── .github/workflows/                     Pages publish, tests, the annual figures reminder
 ```
 
 **New to this?** Read [`docs/FERS-Planning-Project-User-Guide.pdf`](docs/FERS-Planning-Project-User-Guide.pdf). It covers everything below in detail, including a plain language FERS primer, a walkthrough of every interview block, and a troubleshooting section.
@@ -210,7 +246,7 @@ It produces the arithmetic. You take the arithmetic to your agency benefits offi
 
 ## Sourcing and known gaps
 
-[`docs/06-fers-rules-reference.md`](docs/06-fers-rules-reference.md) carries 100 citations across 22 rule sections, drawn from opm.gov, tsp.gov, ssa.gov, cms.gov, irs.gov, eCFR, the US Code, and congressional sources. Rules verified September 2026.
+[`docs/06-fers-rules-reference.md`](docs/06-fers-rules-reference.md) carries 103 citations across 22 rule sections, drawn from opm.gov, tsp.gov, ssa.gov, cms.gov, irs.gov, eCFR, the US Code, and congressional sources. Rules verified September 2026.
 
 It also names **ten items that could not be verified or where sources conflict**, rather than papering over them. Among them:
 

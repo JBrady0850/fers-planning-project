@@ -1,6 +1,6 @@
 # FERS RULES REFERENCE, SOURCED
 
-Every rule this system relies on, with its citation. Verified September 2026.
+Every rule this system relies on, with its citation. Verified September 2026. Sections 2, 3 and 8 rechecked against the US Code and the CSRS/FERS Handbook on 25 October 2026.
 
 **Standing caution.** Federal benefit rules change, and dollar figures change annually. Re verify any rule at opm.gov, tsp.gov, ssa.gov, medicare.gov or irs.gov before it drives a filing decision, and say in the report that you did. Two OPM Handbook chapters cited below carry text that statute has since superseded, and both are flagged where they appear.
 
@@ -38,6 +38,10 @@ Corroboration: CSRS/FERS Handbook Chapter 42, https://www.opm.gov/retirement-cen
 | MRA + 30 | MRA | 30 years | None |
 | MRA + 10 | MRA | 10 to 29 years | Reduced |
 
+**Five years of civilian service under every path.** 5 U.S.C. 8410: "an employee or Member must complete at least 5 years of civilian service creditable under section 8411 in order to be eligible for an annuity under this subchapter." Military service bought back with the deposit counts toward the 10, 20 and 30 years in the table, but never toward these 5. Someone with 4 civilian years and 4 military years has no annuity at any age.
+
+Source: 5 U.S.C. 8410, https://www.law.cornell.edu/uscode/text/5/8410, accessed 2026-10-25
+
 "Immediate" means the annuity begins no later than 31 days after separation, per 5 CFR 842.204(c)(1)(ii). For a voluntary retirement that is the first day of the month after separation. OPM consumer pages round this to 30 days; the regulation says 31.
 
 Source: OPM FERS Eligibility, https://www.opm.gov/retirement-center/fers-information/eligibility/
@@ -64,9 +68,10 @@ Source: CSRS/FERS Handbook Chapter 42, https://www.opm.gov/retirement-center/pub
 Source: CSRS/FERS Handbook Chapter 42, https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c042.pdf
 Corroboration: https://www.myfederalretirement.com/fers-postponed-retirement-mra10-mra20/
 
-**Deferred.** Available to someone who separates with at least 5 years of creditable civilian service having taken no refund. Payable at 62 with 5 years unreduced, or at MRA with 10 years reduced 5 percent per year under 62. OPM states verbatim: **"If you receive a deferred annuity, you are not eligible to reenroll in any health benefits, life insurance coverage, or dental and vision benefits."**
+**Deferred.** Available to someone who separates with at least 5 years of creditable civilian service having taken no refund. Payable at 62 with 5 years unreduced, or with 10 years from the first day of the month after the MRA, reduced 5/12 of 1 percent for each month under 62, or at any later date up to 62 to shrink that reduction. Two exceptions remove the reduction, in OPM's words: **"If you have 20 or more years of creditable service and elect to have your annuity commence at age 60, the age reduction is eliminated. If you have 30 or more years of creditable service your annuity will not have an age reduction."** The annuity commences on the first day of the month after the age and service requirements are met, 5 U.S.C. 8464(a)(1)(A)(ii); OPM puts it as "the first day of the month after you reach age 62". Unused sick leave is not creditable on a deferred annuity, and no supplement is payable. OPM states verbatim: **"If you receive a deferred annuity, you are not eligible to reenroll in any health benefits, life insurance coverage, or dental and vision benefits."**
 
-Source: OPM Deferred Retirement, https://www.opm.gov/retirement-center/fers-information/types-of-retirement/tabs/deferred-retirement/
+Source: OPM Deferred Retirement, https://www.opm.gov/retirement-center/fers-information/types-of-retirement/tabs/deferred-retirement/, accessed 2026-10-25
+Source: 5 U.S.C. 8464, https://www.law.cornell.edu/uscode/text/5/8464, accessed 2026-10-25
 
 **The decisive distinction.** Only the postponed path preserves the ability to re enroll in FEHB and FEGLI, and the postponed path requires reaching the MRA with at least 10 years **before** separating. Separating before the MRA forces the deferred path and permanently forfeits federal insurance.
 
@@ -113,6 +118,8 @@ Corroboration: https://www.myfederalretirement.com/fers-high-3-salary/
 **It does, however, count toward the 20 years the 1.1 percent multiplier requires.** OPM Benefits Administration Letter 18-103, dated 12 September 2018, states that a retiree who is at least age 62, whose actual service is less than 20 years but increases to at least 20 years with the addition of unused sick leave credit, will have the annuity computed using the 1.1 percent formula. The reasoning is that the 1.1 percent factor is a computation rule rather than an eligibility rule. Most secondary federal retirement commentary still says the opposite.
 
 Conversion basis: **2,087 hours equals one year on the 360 day retirement year, being twelve months of thirty days.** One month is about 174 hours and one day about 5.8 hours. Eight hours to a day is the leave charging rule, not the annuity conversion, and using it overstates the credit by roughly 38 percent. Round **up** to the next figure on OPM's 2,087 hour chart, add the resulting months and days to actual service, and only then drop any leftover days of the combined total. Sick leave days can complete a partial month of real service, so truncating them first loses a month.
+
+**The table is the authority, not the formula.** OPM's conversion table in RI 83-8 is built on the 2,087 hour basis, but a few of its cells differ from the computed figure by about an hour: 4 months 1 day is 702 hours on the table against 701.5 by formula, 6 months 15 days is 1,131 against 1,130.5, and 25 days is 146 against 144.9. RI 83-8 gives three worked examples, 835 hours as 4 months 24 days, 441 hours as 2 months 16 days, and 1,452 hours as 8 months 11 days by the next higher figure of 1,455. The planner app carries the table cell for cell in `app/js/rules.js`.
 
 Source: OPM RI 83-8, Credit for Unused Sick Leave, https://www.opm.gov/retirement-center/publications-forms/pamphlets/ri83-8.pdf
 Source: OPM BAL 18-103, unused sick leave and the 1.1 percent multiplier, https://www.opm.gov/retirement-center/publications-forms/benefits-administration-letters/2018/18-103.pdf
@@ -279,10 +286,20 @@ Source: CSRS/FERS Handbook Chapter 51, https://www.opm.gov/retirement-center/pub
 **Start, end, and COLA.**
 
 - Starts at retirement for regular immediate retirees and for special provision retirees, and at the MRA for those who retired earlier under VERA or discontinued service.
-- **Ends at the earlier of the last day of the month the retiree reaches age 62, or the last day of the month before entitlement to Social Security begins.** It terminates at 62 whether or not the retiree applies for Social Security.
+- **Ends at the earlier of the last day of the month the retiree becomes 62, or the last day of the month before the first month for which the retiree would, on proper application, be entitled to Social Security.** 5 U.S.C. 8421(a)(3)(B). It terminates whether or not the retiree applies for Social Security. Handbook Chapter 51, section 51A1.1-3 E, adds that for retirement and Social Security purposes a person becomes 62 at the first moment of the day before the 62nd birthday, and is entitled to Social Security from the first month throughout which they are 62. Its two examples: a 62nd birthday on 1 September stops the supplement on 31 August; a birthday on 2 September also stops it on 31 August, because Social Security is payable for September. **For a birthday on the 1st or 2nd the supplement ends a month earlier than the usual reading suggests.**
 - **It receives no cost of living adjustment.** Handbook Chapter 51: "The retiree annuity supplement is not increased by cost-of-living adjustments (COLAs)."
 
 **Earnings test.** Earnings above the annual exempt amount reduce the supplement by **one dollar for every two dollars** over. The **2026 annual exempt amount is $24,480**, which is $2,040 per month. The reduction is applied in the year **after** the earnings were made, in administrative practice beginning with the **July** payment. For the year immediately following the first year of entitlement, the reduction cannot exceed the total supplement payable in that first year.
+
+The statute, 5 U.S.C. 8421a, settles the details:
+
+- **Only earnings while the supplement is payable count**, 8421a(b)(4)(B)(i): "only earnings attributable to periods during which such individual was entitled to an annuity supplement ... shall be considered." Federal pay before retirement in the retirement year does not count. Handbook Chapter 51's example: Liza retires at the end of September 2020 with a $500 supplement; her three 2020 payments total $1,500, so any 2021 reduction for her October to December 2020 earnings cannot exceed $1,500.
+- **Each year's reduction is half the excess, capped at the supplement paid for the year the money was earned**, 8421a(b)(2).
+- **It is spread evenly over the supplement months of the 12 month period that starts on the first day of the seventh month after the year ends**, which is July through the next June, 8421a(b)(1) and (b)(5). Months after the supplement ends at 62 drop out of the count, 8421a(b)(3)(B), and no month's charge can exceed that month's supplement, 8421a(b)(1)(B). Earnings in the year the supplement ends therefore reduce nothing, and the Handbook says so.
+
+Source: 5 U.S.C. 8421, https://www.law.cornell.edu/uscode/text/5/8421, accessed 2026-10-25
+Source: 5 U.S.C. 8421a, https://www.law.cornell.edu/uscode/text/5/8421a, accessed 2026-10-25
+Source: CSRS/FERS Handbook Chapter 51, sections 51A1.1-3 E and 51A3, https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c051.pdf, accessed 2026-10-25
 
 **Counted:** wages for services performed in the year plus net earnings from self employment, including bonuses and overtime, and including pay for work not covered by Social Security.
 **Not counted:** the FERS annuity itself, TSP withdrawals, Social Security benefits, interest, dividends, capital gains, most rental income, inheritances, insurance proceeds.
@@ -364,15 +381,16 @@ Source: OPM Types of Retirement, https://www.opm.gov/retirement-center/fers-info
 
 | Election | Survivor receives | Retiree's annuity reduced by |
 |---|---|---|
-| Full | 50 percent of the unreduced annuity | 10 percent |
-| Partial | 25 percent of the unreduced annuity | 5 percent |
+| Full | 50 percent of the base annuity | 10 percent of the base |
+| Partial | 25 percent of the base annuity | 5 percent of the base |
 | None | Nothing | Nothing |
 
-The survivor percentage applies to the unreduced basic annuity. **Spousal consent is required to elect less than the maximum**, including the partial election and no election. The combined total of all current and former spouse survivor annuities is capped at 50 percent of the self only annuity.
+The survivor percentage applies to the annuity before the survivor reduction. **Where an age reduction applies, as on an MRA+10 annuity, the base for both the survivor benefit and the survivor reduction is the annuity after the age reduction.** CSRS/FERS Handbook Chapter 50, section 50B3.1-3D.4: "In calculating the base for the survivor benefit, use the annuity after it has been reduced for age, but before any alternative annuity reduction." Section 50B3.1-3A sets the order of FERS reductions: age, then survivor, then the alternative annuity. **Spousal consent is required to elect less than the maximum**, including the partial election and no election. The combined total of all current and former spouse survivor annuities is capped at 50 percent of the self only annuity.
 
 Source: OPM Survivor Benefits, https://www.opm.gov/retirement-center/survivor-benefits/
 Source: OPM FERS Computation, https://www.opm.gov/retirement-center/fers-information/computation/
 Source: CSRS/FERS Handbook Chapter 52, https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c052.pdf
+Source: CSRS/FERS Handbook Chapter 50, sections 50B3.1-3A and 50B3.1-3D.4, https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/c050.pdf, accessed 2026-10-25
 
 **The FEHB consequence.** OPM: "A surviving spouse can continue health benefits coverage if a monthly survivor annuity is payable to the surviving spouse." With no survivor annuity payable, the spouse's FEHB ends at the retiree's death with only a one time conversion opportunity. **The 5 percent partial election is sufficient to preserve it.**
 
@@ -778,3 +796,6 @@ The phase out rate and the full elimination points are not stated on IRS pages a
 98. [DFAS, Military Service Deposits](https://www.dfas.mil/civilianemployees/militaryservice/militaryservicedeposits/)
 99. [National Archives, Standard Form 180 and Military Service Records](https://www.archives.gov/veterans/military-service-records/standard-form-180)
 100. [CRS R40428, Credit for Military Service Under Civilian Federal Employee Retirement Systems](https://www.everycrsreport.com/reports/R40428.html)
+101. [5 U.S.C. 8410, Eligibility for Annuity](https://www.law.cornell.edu/uscode/text/5/8410)
+102. [5 U.S.C. 8421, Annuity Supplement](https://www.law.cornell.edu/uscode/text/5/8421)
+103. [5 U.S.C. 8421a, Reductions for Excess Earnings](https://www.law.cornell.edu/uscode/text/5/8421a)

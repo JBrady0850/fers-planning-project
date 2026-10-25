@@ -16,6 +16,8 @@ Eleven files. They cross-reference each other by path, so the set only works who
 | `docs/07-boldin-field-map-and-entry-engine.md` | You and Claude | Where every value goes inside Boldin, screen by screen, and the specification for the Entry Sheet. The validation guide tells you what is wrong. This one tells you what to type. |
 | `templates/boldin-entry-sheet.md` | Claude writes into it | The deliverable that turns processed documents into a typed list of Boldin entries. Copied to `08 Boldin Entry Sheets/` with the date. |
 
+The repository also carries a browser planner in `app/`, published at https://jbrady0850.github.io/fers-planning-project/ and described in `docs/08-planner-app.md`. It is optional, it is not one of the eleven files, and it needs none of them. It works from answers you type rather than from your documents, and its Boldin tab writes the Entry Sheet in the template's own layout.
+
 ---
 
 ## WHAT THIS IS, IN ONE PARAGRAPH

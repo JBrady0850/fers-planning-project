@@ -1,0 +1,38 @@
+name: Annual figures reminder
+
+# FERS and Social Security COLAs and the earnings test exempt amount are announced
+# in October; TSP, IRA and Medicare figures follow in November. These runs open
+# one issue when app/js/rules.js still carries an older program year.
+on:
+  schedule:
+    - cron: '17 15 15 11 *'
+    - cron: '17 15 15 12 *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Open an issue when next year's figures are due
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          year=$(grep -oE 'programYear: [0-9]{4}' app/js/rules.js | grep -oE '[0-9]{4}')
+          next=$(( $(date -u +%Y) + 1 ))
+          if [ "$year" -ge "$next" ]; then
+            echo "Rules file is already at $year."
+            exit 0
+          fi
+          title="Update the planner rules file to $next figures"
+          open=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq 'length')
+          if [ "$open" != "0" ]; then
+            echo "An issue is already open."
+            exit 0
+          fi
+          sed "s/{{NEXT}}/$next/g; s/{{YEAR}}/$year/g" .github/annual-figures.md > body.md
+          gh issue create --title "$title" --body-file body.md

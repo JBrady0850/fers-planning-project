@@ -26,6 +26,16 @@ my-workspace/
 *.pdf
 !docs/FERS-Planning-Project-User-Guide.pdf
 
+# Files the planner app saves, in case one lands in a clone
+fers-planner-answers-*.json
+FERS-Retirement-Plan-*.docx
+FERS-Retirement-Plan-*.pdf
+Boldin Entry Sheet *.md
+
+# Test and build output
+node_modules/
+__pycache__/
+
 # Local notes
 Facts Register.md
 Open Items.md

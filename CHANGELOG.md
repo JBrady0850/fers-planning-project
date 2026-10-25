@@ -4,6 +4,44 @@ All notable changes to this project are recorded here.
 
 Rules in this repository were verified in September 2026. Dollar figures are 2026 program year values and change annually. See `docs/06-fers-rules-reference.md` for citations and for the list of items that could not be verified.
 
+## [1.3.0] - 2026-10-25
+
+The FERS Planner: a free web app that runs the core of this method in a browser, with no setup, and saves the whole plan as a Word file or a PDF.
+
+### Added, the planner app
+
+- **`app/`**, published at https://jbrady0850.github.io/fers-planning-project/. Plain HTML, CSS and JavaScript with no build step and no network calls with anyone's answers. It installs to a home screen, works offline, and opens from a downloaded copy.
+- **A ten step interview** that mirrors Blocks 1 through 13 of the master prompt and asks for eligibility facts before any preferred date. Answers save in the browser as they are typed, and an answers file carries them to another device or into a Claude session.
+- **Eight calculators, each showing its arithmetic and its sources:** the MRA and the four eligibility dates with every age-triggered date; the creditable service audit with the military deposit compared both ways and its break-even; the high-3, entered or computed from salary history, and the annuity with the age and survivor reductions, checked against any agency estimate; the supplement with its earnings test and a no-supplement case; sick leave on OPM's own chart and the annual leave lump sum; the FEHB and FEGLI five year rules at every candidate date, postponed versus deferred, the pre-65 window and the FEGLI reduction elections; the survivor election priced three ways; and income against spending period by period with the withdrawal rate and a verdict.
+- **The Boldin Entry Sheet** generated from the answers, ordered by impact with the annuity COLA, the withdrawal strategy, the annuity start date and the supplement first, every row citing its source and naming what it replaces, and missing inputs written as BLOCKED rows that name the document that would unblock them. It copies as Markdown in the layout of `templates/boldin-entry-sheet.md`.
+- **Word and PDF output** built in the browser by docx and pdfmake, which ship in `app/vendor/` with their MIT licences. The saved plan follows Phase C of the master prompt, carries the Entry Sheet as a landscape appendix, and ends with the definition of done checklist. The page, the Word file and the PDF render the same plan model, so they cannot disagree.
+- **A stop notice for special provision coverage.** The app covers Regular FERS voluntary retirement only and says so wherever its figures would mislead.
+- **`app/js/rules.js`**, every rule and 2026 figure the app uses in one file with its source, and **`docs/08-planner-app.md`**, the app's scope, method, files, testing and publishing.
+- **An independent check.** A separate reviewer rebuilt about fifty scenarios by hand from `docs/06` before release. The ten defects it found are fixed and each has an engine test: military service already in the SCD counted in the supplement, the 5 civilian year rule, a plan that failed on a partial interview, an income plan that skipped the months before a postponed or deferred annuity, the earnings test timing and cap, a 1.1 percent date a month late, sick leave value that ignored the 1.1 percent step, the supplement end for birthdays on the 1st and 2nd, FEHB costed on the deferred path, and Boldin rows for annuities that start at 62.
+- **Tests.** `tests/engine.test.mjs` reproduces OPM's RI 83-8 conversion examples, the 1.1.1 validation report's combined service example and every figure in Part 10 of the guide. `tests/ui_smoke.py` opens every tab at phone, iPad, Android tablet and desktop sizes, from a server and as a plain file, and builds and opens the Word, PDF and Markdown files.
+- **Workflows.** `pages.yml` publishes the app, `tests.yml` runs both suites, and `annual-figures.yml` opens an issue each November and December when the rules file is behind the calendar.
+- README section with screenshots and a QR code, and a note in `docs/01-read-me-first.md` that the app is optional and not one of the eleven package files.
+
+### Clarified, rules reference
+
+- **The survivor base.** `docs/06-fers-rules-reference.md` section 12 and `MASTER-PROMPT.md` Block 11 said the survivor percentage applies to "the unreduced annuity." Where an age reduction applies, as on MRA+10, the base for both the survivor benefit and the survivor reduction is the annuity after the age reduction, per CSRS/FERS Handbook Chapter 50, section 50B3.1-3D.4, and the order of FERS reductions is age, then survivor, per section 50B3.1-3A.
+- **Five years of civilian service under every path.** Section 2 now quotes 5 U.S.C. 8410: military service bought back with the deposit counts toward 10, 20 and 30 years, never toward the 5.
+- **Deferred annuity start dates.** Section 3 said a deferred annuity is payable at 62, or at the MRA reduced. OPM's Deferred Retirement page adds that with 20 or more years it starts unreduced at 60, and with 30 or more at the MRA, and 5 U.S.C. 8464(a)(1)(A)(ii) sets the start on the first day of the month after the age is reached.
+- **When the supplement ends.** Section 8 now follows 5 U.S.C. 8421(a)(3)(B) and Handbook Chapter 51, section 51A1.1-3 E: for a 62nd birthday on the 1st or 2nd of a month the supplement ends on the last day of the month before, whether or not the retiree claims Social Security.
+- **How the earnings test is applied.** Section 8 now quotes 5 U.S.C. 8421a: only earnings in months the supplement is paid count, so pay before retirement does not; each year's reduction is capped at that year's supplement and spread over the supplement months from the next July through June; earnings in the year the supplement ends reduce nothing. The rules reference grew from 100 citations to 103.
+- **The sick leave table is the authority, not the formula.** Section 6 now records that a few cells of OPM's RI 83-8 table differ from the 2,087 hour computation by about an hour, and gives the three worked examples RI 83-8 publishes, including 1,452 hours as 8 months 11 days by the next higher figure.
+
+### Known, for the next guide rebuild
+
+The PDF guide was not rebuilt in this release. Six items are recorded for the next rebuild:
+
+- Section 2.15's survivor table carries the same "unreduced annuity" wording corrected above.
+- Section 10.5 says MRA+30 becomes available on 31 August 2029 with the deposit. By the guide's own service table, 30 years arrive on 31 July 2029, so the earliest MRA+30 month end date is a month earlier. The figures priced for 31 August 2029 are correct.
+- Section 2.10 describes the deferred annuity as payable at 62, or at the MRA reduced; add the unreduced starts at 60 with 20 years and at the MRA with 30, and the 5 civilian year floor.
+- Section 2.8 says the supplement ends at the end of the month you turn 62; add that a birthday on the 1st or 2nd ends it a month sooner.
+- Section 2.8 on the earnings test should say that only earnings after retirement count, and that a year's reduction is capped at that year's supplement.
+- Section 10.8 judges the bridge years only. The worked example's tightest period is from the end of the supplement at 62 to a Social Security claim at 67, at a withdrawal rate of 4.88 percent, which the planner reports as tight.
+
 ## [1.2.0] - 2026-09-16
 
 Service Computation Dates and the military service credit deposit are now covered properly, and the expense aggregator guidance was corrected. Every new claim was validated at the same standard as 1.1.1: three independent authoritative sources per claim, none accepted from a page that was not fetched. The rules reference grew from 82 citations to 100.

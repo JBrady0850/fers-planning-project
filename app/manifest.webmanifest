@@ -1,0 +1,16 @@
+{
+  "name": "FERS Planner",
+  "short_name": "FERS Planner",
+  "description": "Regular FERS retirement worked out from your own answers: dates, annuity, supplement, leave, insurance, survivor election and a Boldin Entry Sheet.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f9",
+  "theme_color": "#0f2942",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

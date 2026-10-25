@@ -42,6 +42,24 @@ Dollar figures in this repository are 2026 program year values. Every year the f
 - FEHB and FEDVIP premiums
 - Medicare Part B premium, deductible, and IRMAA brackets
 - Social Security taxation thresholds, which do not change, and saying so is itself useful
+- The service credit deposit interest rate, 4.250 percent for 2026
+
+**The planner app carries the same figures in `app/js/rules.js`.** Update `docs/06-fers-rules-reference.md` first, then the rules file, changing `programYear` and `checked` together, then bump `VERSION` in `app/sw.js`. The Annual figures reminder workflow opens an issue each November and December while the rules file is behind. `docs/08-planner-app.md` has the full procedure.
+
+## Changing the planner app
+
+The app is plain HTML, CSS and JavaScript with no build step. Calculations belong in `app/js/engine.js` and rules in `app/js/rules.js`, never in the page code, so the engine tests can reach them. Text the plan shows belongs in `app/js/plan.js`, because the page, the Word file and the PDF all render it.
+
+Run both suites before opening a pull request:
+
+```
+node --test tests/engine.test.mjs
+pip install playwright pypdf
+python -m playwright install chromium
+python tests/ui_smoke.py
+```
+
+A rule change needs an engine test built on a published example where one exists. If the look changes, run `python tests/make_screenshots.py` to refresh the README images.
 
 ## Other contributions
 
@@ -74,6 +92,8 @@ The documents follow a deliberate house style. Match it:
 - [ ] House style followed, including no em dashes
 - [ ] If a rule in `docs/06-fers-rules-reference.md` changed, `MASTER-PROMPT.md` was checked for the same rule
 - [ ] If the change affects the user guide, `docs/FERS-Planning-Project-User-Guide.pdf` was noted as needing a rebuild
+- [ ] If a figure in `app/js/rules.js` changed, `programYear`, `checked` and the `app/sw.js` version changed with it
+- [ ] `node --test tests/engine.test.mjs` and `python tests/ui_smoke.py` pass
 - [ ] `CHANGELOG.md` updated
 
 ## What this project will not accept

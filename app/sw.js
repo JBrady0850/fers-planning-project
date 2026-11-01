@@ -1,10 +1,10 @@
 /* Offline support. The app has no data feed, so everything is cached on install
    and served cache first. Bump VERSION with every release so returning visitors
    get the new files. */
-var VERSION = 'fers-planner-1.3.0';
+var VERSION = 'fers-planner-1.3.1'; // standalone: only caches named fers-planner-* are ever deleted
 var SHELL = [
   './', 'index.html', 'css/app.css', 'manifest.webmanifest',
-  'js/rules.js', 'js/engine.js', 'js/plan.js', 'js/glossary.js', 'js/sample.js', 'js/export.js', 'js/app.js',
+  'js/rules.js', 'js/engine.js', 'js/plan.js', 'js/glossary.js', 'js/sample.js', 'js/export.js', 'js/app.js', 'js/theme.js',
   'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'icons/open-app-qr.png',
   'vendor/docx.min.js', 'vendor/pdfmake.min.js', 'vendor/vfs_fonts.js'
 ];
@@ -15,7 +15,7 @@ self.addEventListener('install', function (e) {
 
 self.addEventListener('activate', function (e) {
   e.waitUntil(caches.keys().then(function (keys) {
-    return Promise.all(keys.filter(function (k) { return k !== VERSION; }).map(function (k) { return caches.delete(k); }));
+    return Promise.all(keys.filter(function (k) { return k.indexOf('fers-planner-') === 0 && k !== VERSION; }).map(function (k) { return caches.delete(k); }));
   }).then(function () { return self.clients.claim(); }));
 });
 

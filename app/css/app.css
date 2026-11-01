@@ -4,8 +4,8 @@
   --navy-2: #14395c;
   --steel: #2c5578;
   --gold: #c8922a;
-  --bg: #f4f6f9;
-  --card: #ffffff;
+  --bg: #dfe4ea;
+  --card: #f3f5f8;
   --ink: #17212b;
   --muted: #55636f;
   --line: #d9e0e7;
@@ -183,4 +183,13 @@ input.short { max-width: 120px; }
   .top, .foot, .tabs, .row-actions, .stepper { display: none; }
   body { background: #fff; }
   .card { box-shadow: none; border: 0; }
+}
+
+/* Theme switch (1.3.1): Auto follows the device; Light and Dark are saved in this browser only */
+.theme-sel { font: 600 .85rem/1 var(--sans); color: #fff; background: transparent; border: 1px solid rgba(255, 255, 255, .45);
+  border-radius: 999px; padding: 6px 10px; min-height: 36px; cursor: pointer; }
+.theme-sel option { color: #16202b; background: #fff; }
+.top-tools { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+@media (max-width: 640px) {
+  .tabs a, .stepper a, .theme-sel { min-height: 44px; display: inline-flex; align-items: center; }
 }

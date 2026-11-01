@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var E = window.FersEngine, P = window.FersPlan, G = window.FersGlossary, R = E.rules;
-  var VERSION = '1.3.0';
+  var VERSION = '1.3.1';
   var KEY = 'fers-planner-answers-v1';
   var memory = null;
   var state = { inputs: load(), tab: 'start', step: 0 };

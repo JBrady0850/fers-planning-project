@@ -4,6 +4,14 @@ All notable changes to this project are recorded here.
 
 Rules in this repository were verified in September 2026. Dollar figures are 2026 program year values and change annually. See `docs/06-fers-rules-reference.md` for citations and for the list of items that could not be verified.
 
+## [1.3.1] - 2026-11-01
+
+### Changed
+- The planner's light theme is softer: the page is #dfe4ea and cards #f3f5f8 instead of pure white.
+- A theme switch in the header: Auto follows the device; Light and Dark are saved in this browser only and applied before the page draws.
+- On phones the section tabs, step chips and the switch are at least 44 px tall.
+- The offline worker deletes only its own caches (names starting `fers-planner-`), so other apps on the same github.io address keep theirs.
+
 ## [1.3.0] - 2026-10-25
 
 The FERS Planner: a free web app that runs the core of this method in a browser, with no setup, and saves the whole plan as a Word file or a PDF.
